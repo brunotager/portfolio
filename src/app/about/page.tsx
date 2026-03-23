@@ -36,60 +36,31 @@ export default function AboutPage() {
           {/* Right Column: Copy */}
           <div className="flex flex-col max-w-[600px] pt-0 md:pt-4">
             
-            {/* Why section */}
-            <h2 className="mb-8 text-2xl md:text-[32px] font-semibold text-brand-text">Why sports, fitness, and youth matter to me</h2>
-            
-            <p className="mb-6 text-[18px] leading-[28px] text-brand-text font-medium">
-              I grew up in sports, training and competing from a young age. It taught me something simple early on.<br />
-              Talent matters, but effort is what keeps you in the game.
+            {/* Designing for Action section */}
+            <h2 className="mb-6 text-2xl md:text-[32px] font-semibold text-brand-text">Designing for Action. Eliminating Hesitation.</h2>
+            <p className="mb-12 text-[18px] leading-[28px] text-brand-text font-medium">
+              Whether it’s a fitness app or a complex AI workflow, my goal is the same: reduce the cognitive load so the user can keep moving.
             </p>
-            
-            <div className="text-[16px] leading-[24px] text-brand-text/75 flex flex-col mb-16">
-              <p className="mb-4">
-                I don’t spend much time wondering if I’m good at something. I learn it. I practice it. I improve a little every day.
-              </p>
-              <p className="mb-6">
-                That mindset has shaped every step of my career.
-              </p>
-              
-              <p className="mb-6">
-                I’ve built my career across three different environments, all centered around people.
-              </p>
-              <p className="mb-6">
-                In communications, I learned how language shapes perception and how to speak to many without losing clarity.<br />
-                In hospitality, I learned how to listen, adapt quickly, and lead teams in high-pressure environments where every interaction matters.<br />
-                In product design, I bring those lessons into digital products that help people take action, stay engaged, and improve over time.
-              </p>
-              
-              <p className="mb-6">
-                I focus on youth sports, fitness, and health because these products shape habits early. When they are designed well, they build confidence, consistency, and long-term commitment.
-              </p>
+
+            {/* Three Careers section */}
+            <h2 className="mb-6 text-2xl md:text-[32px] font-semibold text-brand-text">Three Careers. One Goal.</h2>
+            <div className="text-[16px] leading-[24px] text-brand-text/75 flex flex-col mb-12 space-y-4">
               <p>
-                That is the kind of work I want to do.
+                I’ve built my career across three distinct industries, all centered on how people make decisions under pressure:
               </p>
+              <ul className="list-outside list-disc pl-6 space-y-3">
+                <li><strong className="text-brand-text font-semibold">Strategic Communications (6 years):</strong> Managed communications for Fortune 500 clients, learning how to speak to thousands of people at once without losing clarity or intent.</li>
+                <li><strong className="text-brand-text font-semibold">Operations &amp; Hospitality (8 years):</strong> Led high-pressure teams through post-pandemic recoveries and launched startups, consistently delivering sustainable revenue growth and operational stability.</li>
+                <li><strong className="text-brand-text font-semibold">Product Development (2+ years):</strong> I move quickly from user insight to shipped product, working as a strategic partner to engineering to ensure the system holds up under real-world load.</li>
+              </ul>
             </div>
 
-            {/* Approach section */}
-            <h2 className="mb-6 text-2xl md:text-[32px] font-semibold text-brand-text">How I approach design</h2>
-            <div className="text-[16px] leading-[24px] text-brand-text/75 flex flex-col mb-16">
-              <p className="mb-4">
-                I design products that help people act, not hesitate.
-              </p>
-              <p className="mb-4">
-                I focus on clear, intuitive experiences that people can use without thinking twice.
-              </p>
-              <p>
-                I move quickly from idea to shipped product, working closely with engineers to make sure what we design holds up in the real world.
-              </p>
-            </div>
-
-            {/* What I care about section */}
-            <h2 className="mb-6 text-2xl md:text-[32px] font-semibold text-brand-text">What I care about</h2>
+            {/* Core Principles section */}
+            <h2 className="mb-6 text-2xl md:text-[32px] font-semibold text-brand-text">Core Principles</h2>
             <ul className="mb-10 list-outside list-disc pl-6 space-y-3 text-[16px] leading-[24px] text-brand-text/75">
-              <li>Health as a foundation, not an afterthought</li>
-              <li>Learning through play and repetition</li>
-              <li>Building confidence through visible progress</li>
-              <li>Designing products that support long-term commitment</li>
+              <li><strong className="text-brand-text font-semibold">Progress over Perfection:</strong> Visible wins build the confidence required for long-term commitment.</li>
+              <li><strong className="text-brand-text font-semibold">Design as Behavior:</strong> I move beyond &quot;features&quot; to create feedback loops that reward consistency and habit formation.</li>
+              <li><strong className="text-brand-text font-semibold">Calm Systems:</strong> In health and fitness, the interface should never be louder than the user&apos;s goal.</li>
             </ul>
 
             {/* CTA */}
