@@ -1,26 +1,56 @@
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F7F6F3;
+  --foreground: #1A1A1A;
 }
 
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-brand-bg: #F7F6F3;
+  --color-brand-text: #1A1A1A;
+  --color-brand-accent: #C69A3C;
+  --color-border-light: #E8E6E1;
+  --color-border-dark: #E2DFD8;
+  --color-border-nav: #EAE8E3;
+  
+  --font-sans: 'General Sans', system-ui, sans-serif;
+  --radius-md: 8px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-brand-bg text-brand-text font-sans antialiased;
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Desktop Typography */
+  h1 {
+    @apply text-[64px] font-bold leading-[72px] tracking-[-0.5px];
+  }
+  h2 {
+    @apply text-[32px] font-semibold leading-[40px];
+  }
+  h3 {
+    @apply text-[24px] font-semibold leading-[32px];
+  }
+
+  /* Mobile Typography */
+  @media (max-width: 768px) {
+    h1 {
+      @apply text-[40px] leading-[48px];
+    }
+    h2 {
+      @apply text-[24px] leading-[32px];
+    }
+    h3 {
+      @apply text-[20px] leading-[26px];
+    }
+  }
+
+  /* Disable outline on strong elements */
+  *:focus-visible {
+    @apply outline-brand-accent;
+  }
 }
