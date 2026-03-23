@@ -70,8 +70,8 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex flex-col justify-center items-center px-6 md:px-12 pt-[120px] pb-16 text-center max-w-4xl mx-auto w-full">
         <h1 className="max-w-[860px] mx-auto mb-6">
-          Athlete first.<br />
-          Product designer second.
+          Athlete at heart.<br />
+          Product Designer by craft.
         </h1>
         <p className="text-[18px] md:text-[22px] font-normal leading-[28px] md:leading-[32px] text-brand-text/80 mb-8 max-w-2xl">
           I design products that help people act, not hesitate.
@@ -116,7 +116,7 @@ export default function Home() {
       <section id="about" className="scroll-mt-[88px] px-6 md:px-12 py-32 max-w-6xl mx-auto w-full bg-brand-bg">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-start">
           <div className="w-full">
-            <h2 className="mb-8">Why sports, fitness, and youth matter to me</h2>
+            <h2 className="mb-8">Athlete Mindset. Product Execution.</h2>
             {/* Aspect ratio container for potential headshot later */}
             <div className="relative aspect-[4/5] md:aspect-[3/4] overflow-hidden rounded-[16px] border border-border-light bg-border-light w-full">
               <Image
@@ -130,27 +130,20 @@ export default function Home() {
           </div>
           <div className="flex flex-col max-w-[600px] pt-0 md:pt-4">
             <p className="mb-6 text-[18px] leading-[28px] text-brand-text font-medium">
-              I grew up in sports, training and competing from a young age. It taught me something simple early on.<br />
-              Talent matters, but effort is what keeps you in the game.
+              Growing up with competitive sports, I learned that talent is the baseline, but effort is the leverage. I don’t wonder if I’m good at something; I practice until I am.
             </p>
             
             <div className="text-[16px] leading-[24px] text-brand-text/75 flex flex-col">
               <p className="mb-4">
-                I don’t spend much time wondering if I’m good at something. I learn it. I practice it. I improve every day.
+                My career is built on three pillars of human behavior:
               </p>
-              <p className="mb-6">
-                That mindset has shaped every step of my career.
-              </p>
-              
-              <p className="mb-6">
-                In communications, I learned how language shapes behavior. In hospitality, I learned how listening builds trust and how to lead teams at scale. Today, in product design, I build products that help people improve, stay engaged, and enjoy the process.
-              </p>
-              
+              <ul className="list-outside list-disc pl-6 space-y-2 mb-6 text-[16px] leading-[24px] text-brand-text/80">
+                <li><span className="font-semibold text-brand-text">Strategic Communications:</span> I learned how language shapes behavior and moves audiences at scale.</li>
+                <li><span className="font-semibold text-brand-text">Operations &amp; Hospitality:</span> I learned how to lead high-pressure teams and build trust through thousands of individual interactions.</li>
+                <li><span className="font-semibold text-brand-text">Product Design:</span> Today, I build systems that help people stay engaged, improve every day, and win.</li>
+              </ul>
               <p className="mb-4">
-                I focus on youth sports, fitness, and health because these products shape habits early. When they are designed well, they build confidence, consistency, and long-term commitment.
-              </p>
-              <p>
-                That is the kind of work I want to do.
+                I focus on sports, fitness, and health because these products shape the habits that define lives. When they are designed well, they build confidence and long-term commitment.
               </p>
             </div>
             
