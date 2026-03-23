@@ -54,9 +54,3 @@
     @apply outline-brand-accent;
   }
 }
-
-@layer utilities {
-  .list-diamond {
-    list-style-type: '◆  ';
-  }
-}
