@@ -6,10 +6,10 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Bruno Tager | Product Designer",
-  description: "Product designer turning effort into progress.",
+  description: "I design products that help people act, not hesitate.",
   openGraph: {
     title: "Bruno Tager | Product Designer",
-    description: "Product designer turning effort into progress.",
+    description: "I design products that help people act, not hesitate.",
     url: "https://brunotager.com",
     siteName: "Bruno Tager Portfolio",
     locale: "en_US",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Bruno Tager | Product Designer",
-    description: "Product designer turning effort into progress.",
+    description: "I design products that help people act, not hesitate.",
   }
 };
 
