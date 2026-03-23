@@ -109,10 +109,15 @@ export function Navigation() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-xl font-medium text-brand-text"
+                  className="flex flex-col group/item"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  {item.name}
+                  <span className="text-xl font-medium text-brand-text group-hover/item:text-brand-accent transition-colors duration-150">
+                    {item.name}
+                  </span>
+                  <span className="text-sm text-brand-text/60 mt-0.5">
+                    {item.role}
+                  </span>
                 </Link>
               ))}
             </div>
