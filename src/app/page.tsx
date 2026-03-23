@@ -9,28 +9,28 @@ import { CopyEmail } from "@/components/ui/CopyEmail";
 const PORTFOLIO_ITEMS = [
   {
     title: "Codiris",
-    summary: "Replaced fragmented workflows with a unified system that helps teams move faster and build with clarity.",
+    summary: "Architected a unified system that preserves context across the product lifecycle, eliminating the \"continuity gap\" in AI-driven development.",
     href: "/portfolio/codiris",
     imageSrc: "/images/codiris-homepage.png",
     imageBgColor: "#0E0E0F",
   },
   {
     title: "Fit & Fun",
-    summary: "Transformed fitness tracking into a playful, gamified experience focused on building consistency and momentum.",
+    summary: "Built a gamified habit-loop that rewards daily effort, turning fitness from a high-friction chore into a low-friction routine.",
     href: "/portfolio/fit-and-fun",
     imageSrc: "/images/fit-and-fun-homepage.png",
     imageBgColor: "#FFFDF8",
   },
   {
     title: "CycleBot",
-    summary: "Replaced passive browsing with guided decision-making to help users find the right bike faster and with more confidence.",
+    summary: "Solved a 70% checkout abandonment rate by replacing passive browsing with an AI-driven expert that builds the trust required to commit.",
     href: "/portfolio/cyclebot",
     imageSrc: "/images/cyclebot-homepage.png",
     imageBgColor: "#F8F8F8",
   },
   {
     title: "CCTA",
-    summary: "Removed barriers to help visitors understand services, feel safe, and take the first step.",
+    summary: "Lowered the barrier to mental health care by streamlining a complex website into a calm, trustworthy experience that prioritizes user orientation over information density.",
     href: "/portfolio/ccta",
     imageSrc: "/images/ccta-homepage.png",
     imageBgColor: "#F6F5F5",

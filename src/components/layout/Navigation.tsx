@@ -5,10 +5,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const PORTFOLIO_ITEMS = [
-  { name: "Codiris", role: "Clarity in chaotic AI", href: "/portfolio/codiris" },
-  { name: "Fit & Fun", role: "Momentum through repetition", href: "/portfolio/fit-and-fun" },
-  { name: "CycleBot", role: "Hesitation to revenue", href: "/portfolio/cyclebot" },
-  { name: "CCTA", role: "Trust in healthcare", href: "/portfolio/ccta" },
+  { name: "Codiris", role: "Simplified AI Chaos", href: "/portfolio/codiris" },
+  { name: "Fit & Fun", role: "Designed Consistency", href: "/portfolio/fit-and-fun" },
+  { name: "CycleBot", role: "Decisive Discovery", href: "/portfolio/cyclebot" },
+  { name: "CCTA", role: "Trust through Clarity", href: "/portfolio/ccta" },
 ];
 
 export function Navigation() {
