@@ -647,7 +647,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
             {data.problem.paragraphs?.map((p: string, i: number) => <p key={i}>{p}</p>)}
           </div>
           {data.problem.list && data.problem.list.length > 0 && (
-            <ul className="mt-6 mb-6 list-outside list-disc pl-6 space-y-2 text-[16px] leading-[24px] text-brand-text/80">
+            <ul className="mt-6 mb-6 list-outside list-diamond pl-6 space-y-2 text-[16px] leading-[24px] text-brand-text/80">
               {data.problem.list.map((it: string, i: number) => <li key={i}>{it}</li>)}
             </ul>
           )}
@@ -671,7 +671,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
             <p className="text-[16px] leading-[24px] text-brand-text/80 mb-4">{data.context.constraintsPrompt}</p>
           )}
           {data.context.constraints && data.context.constraints.length > 0 && (
-            <ul className="list-outside list-disc pl-6 space-y-2 text-[16px] leading-[24px] text-brand-text/80">
+            <ul className="list-outside list-diamond pl-6 space-y-2 text-[16px] leading-[24px] text-brand-text/80">
               {data.context.constraints.map((c: string, i: number) => <li key={i}>{c}</li>)}
             </ul>
           )}
@@ -686,7 +686,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
             <p className="text-[16px] leading-[24px] text-brand-text/80 mb-4">{data.insight.prompt}</p>
           )}
           {data.insight.list && data.insight.list.length > 0 && (
-            <ul className="mb-6 list-outside list-disc pl-6 space-y-2 text-[16px] leading-[24px] text-brand-text/80">
+            <ul className="mb-6 list-outside list-diamond pl-6 space-y-2 text-[16px] leading-[24px] text-brand-text/80">
               {data.insight.list.map((it: string, i: number) => <li key={i}>{it}</li>)}
             </ul>
           )}
@@ -702,7 +702,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
             {data.bet.paragraphs?.map((p: string, i: number) => <p key={i}>{p}</p>)}
           </div>
           {data.bet.list && data.bet.list.length > 0 && (
-            <ul className="list-outside list-disc pl-6 space-y-2 text-[16px] leading-[24px] text-brand-text/80">
+            <ul className="list-outside list-diamond pl-6 space-y-2 text-[16px] leading-[24px] text-brand-text/80">
               {data.bet.list.map((c: string, i: number) => <li key={i}>{c}</li>)}
             </ul>
           )}
@@ -720,7 +720,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
              <p className="text-[16px] leading-[24px] text-brand-text/80 mb-4">{data.iteration.prompt}</p>
           )}
           {data.iteration.list && data.iteration.list.length > 0 && (
-            <ul className="mb-6 list-outside list-disc pl-6 space-y-2 text-[16px] leading-[24px] text-brand-text/80">
+            <ul className="mb-6 list-outside list-diamond pl-6 space-y-2 text-[16px] leading-[24px] text-brand-text/80">
               {data.iteration.list.map((it: string, i: number) => <li key={i}>{it}</li>)}
             </ul>
           )}
@@ -741,7 +741,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
             {data.shift.paragraphs?.map((p: string, i: number) => <p key={i}>{p}</p>)}
           </div>
           {data.shift.list && data.shift.list.length > 0 && (
-            <ul className="mt-4 list-outside list-disc pl-6 space-y-2 text-[16px] leading-[24px] text-brand-text/80">
+            <ul className="mt-4 list-outside list-diamond pl-6 space-y-2 text-[16px] leading-[24px] text-brand-text/80">
               {data.shift.list.map((it: string, i: number) => <li key={i}>{it}</li>)}
             </ul>
           )}
@@ -800,7 +800,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
                <ul className="space-y-4">
                  {data.outcome.challenging?.map((item: string, i: number) => (
                    <li key={i} className="flex items-start gap-4">
-                     <span className="text-brand-text/30 mt-1">●</span>
+                     <span className="text-brand-text/30 mt-1 text-[12px]">◆</span>
                      <span className="text-[16px] leading-[24px] text-brand-text/80">{item}</span>
                    </li>
                  ))}
@@ -812,7 +812,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         {/* What I'd Do Next */}
         <section className="w-full">
           <h2 className="mb-6 text-2xl md:text-[32px] font-semibold text-brand-text">What I&apos;d Do Next</h2>
-          <ul className="list-outside list-disc pl-6 space-y-2 text-[16px] leading-[24px] text-brand-text/80">
+          <ul className="list-outside list-diamond pl-6 space-y-2 text-[16px] leading-[24px] text-brand-text/80">
             {data.next?.map((item: string, i: number) => <li key={i}>{item}</li>)}
           </ul>
         </section>
@@ -824,7 +824,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
             {data.perspective.paragraphs?.map((p: string, i: number) => <p key={i}>{p}</p>)}
           </div>
           {data.perspective.list && data.perspective.list.length > 0 && (
-            <ul className="list-outside list-disc pl-6 space-y-2 text-[16px] leading-[24px] text-brand-text/80">
+            <ul className="list-outside list-diamond pl-6 space-y-2 text-[16px] leading-[24px] text-brand-text/80">
               {data.perspective.list.map((item: string, i: number) => <li key={i}>{item}</li>)}
             </ul>
           )}
