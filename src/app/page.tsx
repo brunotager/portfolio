@@ -32,7 +32,7 @@ const PORTFOLIO_ITEMS = [
     title: "CCTA",
     summary: "Lowered the barrier to mental health care by streamlining a complex website into a calm, trustworthy experience that prioritizes user orientation over information density.",
     href: "/portfolio/ccta",
-    imageSrc: "/images/ccta-homepage.png",
+    imageSrc: "/images/ccta-homepage.jpg",
     imageBgColor: "#F6F5F5",
   },
 ];

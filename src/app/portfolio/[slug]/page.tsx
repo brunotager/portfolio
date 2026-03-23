@@ -467,10 +467,10 @@ const CASE_STUDIES: Record<string, any> = {
   },
   "ccta": {
     name: "Center for Cognitive Therapy and Assessment",
-    visual_problem: "/images/ccta-visual-1.png",
-    visual_iteration_title: "/images/ccta-visual-2.png",
-    visual_decisions_title: "/images/ccta-visual-3.png",
-    visual_decisions_bottom: "/images/ccta-visual-4.png",
+    visual_problem: "/images/ccta-visual-1.jpg",
+    visual_iteration_title: "/images/ccta-visual-2.jpg",
+    visual_decisions_title: "/images/ccta-visual-3.jpg",
+    visual_decisions_bottom: "/images/ccta-visual-4.jpg",
     contained_visuals: ["visual_decisions_title"],
     subhead: "Designing clarity and trust for a mental health practice",
     problem: {
