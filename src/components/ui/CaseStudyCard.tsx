@@ -1,27 +1,32 @@
 import Link from "next/link";
 import Image from "next/image";
 
+import { ReactNode } from "react";
+
 export interface CaseStudyProps {
   title: string;
-  summary: string;
+  summary: ReactNode;
   imageSrc?: string;
   href: string;
   imageBgColor?: string;
+  imageAlign?: "left" | "center" | "right";
 }
 
-export function CaseStudyCard({ title, summary, imageSrc, href, imageBgColor }: CaseStudyProps) {
+export function CaseStudyCard({ title, summary, imageSrc, href, imageBgColor, imageAlign = "center" }: CaseStudyProps) {
   return (
     <Link href={href} className="group block outline-none">
       <div className="flex flex-col gap-4 focus-visible:ring-2 focus-visible:ring-brand-accent rounded-[8px] p-2 -m-2 transition-colors">
         <div 
-          className="relative aspect-video w-full overflow-hidden rounded-[8px] border border-border-light group-hover:border-border-dark transition-colors duration-200 p-4"
+          className="relative aspect-video w-full overflow-hidden rounded-[8px] transition-colors duration-200 p-4"
           style={{ backgroundColor: imageBgColor || '#0E0E0F' }}
         >          {imageSrc ? (
             <Image
               src={imageSrc}
               alt={title}
               fill
-              className="object-contain p-4 transition-transform duration-250 ease-out group-hover:scale-[1.05] rounded-[8px]"
+              className={`object-contain p-4 transition-transform duration-250 ease-out group-hover:scale-[1.05] rounded-[8px] ${
+                imageAlign === "left" ? "object-left" : imageAlign === "right" ? "object-right" : "object-center"
+              }`}
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           ) : (

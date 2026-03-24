@@ -20,6 +20,10 @@ export function Navigation() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 60);
     };
+    
+    // Run it once on mount to catch the initial position
+    handleScroll();
+    
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -32,25 +36,34 @@ export function Navigation() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${
-          scrolled ? "h-[64px] bg-brand-bg border-b border-border-nav" : "h-[88px] bg-transparent border-b border-transparent"
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
+          scrolled ? "py-4 bg-brand-bg border-b border-border-nav" : "py-8 bg-transparent border-b border-transparent"
         }`}
       >
-        <div className="max-w-6xl mx-auto px-6 md:px-12 h-full flex items-center justify-between">
-          <Link href="/" className="font-medium text-brand-text hover:text-brand-accent transition-colors duration-200 z-50 relative">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 flex items-center justify-between">
+          <Link 
+            href="/" 
+            className="font-medium text-brand-text hover:text-brand-accent transition-colors duration-200 z-50 relative"
+            onClick={(e) => {
+              if (pathname === "/") {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }}
+          >
             Bruno Tager
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8 h-full">
-            <div className="group relative h-full flex items-center">
+          <nav className="hidden md:flex items-center gap-8">
+            <div className="group relative flex items-center">
               <a
                 href={pathname === "/" ? "#work" : "/#work"}
-                className="font-medium text-brand-text hover:text-brand-accent transition-colors duration-200"
+                className="font-medium text-brand-text hover:text-brand-accent transition-colors duration-200 py-2"
               >
                 Portfolio
               </a>
-              <div className="absolute top-full left-0 pt-1 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-200 w-64">
+              <div className="absolute top-full left-0 pt-4 -mt-2 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-200 w-64">
                 <div className="bg-brand-bg border border-border-light rounded-md p-2 flex flex-col gap-4">
                   {PORTFOLIO_ITEMS.map((item) => (
                     <Link

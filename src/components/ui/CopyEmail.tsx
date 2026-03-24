@@ -45,7 +45,7 @@ export function CopyEmail({ isPrimary }: CopyEmailProps = {}) {
             copied ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
           }`}
         >
-          Copied. Let&apos;s talk.
+          Copied. Let&apos;s Talk.
         </span>
       </button>
     );
@@ -55,21 +55,21 @@ export function CopyEmail({ isPrimary }: CopyEmailProps = {}) {
     <div className="relative inline-block group">
       <button
         onClick={handleCopy}
-        className="text-brand-text font-medium relative overflow-hidden h-6"
+        className="text-brand-text font-medium relative overflow-hidden h-6 w-[145px] text-left"
       >
         <span
-          className={`block transition-all duration-200 ease-out ${
+          className={`block transition-all w-full duration-200 ease-out ${
             copied ? "-translate-y-full opacity-0" : "translate-y-0 opacity-100 group-hover:text-brand-accent group-hover:underline decoration-1 underline-offset-4"
           }`}
         >
           Copy email
         </span>
         <span
-          className={`block absolute top-0 left-0 text-brand-accent transition-all duration-200 ease-out ${
+          className={`block absolute top-0 left-0 whitespace-nowrap text-brand-accent transition-all duration-200 ease-out ${
             copied ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
           }`}
         >
-          Copied. Let&apos;s talk.
+          Copied. Let&apos;s Talk.
         </span>
       </button>
 
