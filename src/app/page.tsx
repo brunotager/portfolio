@@ -80,7 +80,8 @@ export default function Home() {
           Product Clarity.
         </h1>
         <p className="text-[18px] md:text-[22px] font-normal leading-[28px] md:leading-[32px] text-brand-text/80 mb-8 max-w-2xl">
-          Designing for Results. Eliminating Hesitation.
+          <span className="block md:inline">Designing for Results. </span>
+          <span className="block md:inline">Eliminating Hesitation.</span>
         </p>
         <div className="flex items-center gap-4 flex-col sm:flex-row">
           <Button href="#work">Portfolio</Button>
@@ -104,7 +105,10 @@ export default function Home() {
       {/* Case Studies Section */}
       <section id="work" className="scroll-mt-[64px] px-6 md:px-12 pt-16 pb-24 max-w-6xl mx-auto w-full">
         <div className="mb-16 max-w-3xl">
-          <h2 className="mb-6">Four Problems Solved. Sixteen Years of Results.</h2>
+          <h2 className="mb-6">
+            <span className="block md:inline">Four Problems Solved. </span>
+            <span className="block md:inline">Sixteen Years of Results.</span>
+          </h2>
           <p className="text-[18px] md:text-[20px] leading-[28px] md:leading-[30px] text-brand-text/80">
             These case studies are selected benchmarks from three careers spent turning complex friction into customer satisfaction. From managing Fortune 500 communications to creating high-impact systems, I focus on the decisions that delight the customer and drive the business forward.
           </p>
@@ -128,7 +132,10 @@ export default function Home() {
       <section id="about" className="scroll-mt-[64px] px-6 md:px-12 pt-16 pb-32 max-w-6xl mx-auto w-full bg-brand-bg">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-start">
           <div className="w-full">
-            <h2 className="mb-8">Designing for Results. Eliminating Hesitation.</h2>
+            <h2 className="mb-8">
+              <span className="block md:inline">Designing for Results. </span>
+              <span className="block md:inline">Eliminating Hesitation.</span>
+            </h2>
             {/* Aspect ratio container for potential headshot later */}
             <div className="relative aspect-[4/5] md:aspect-[3/4] overflow-hidden rounded-[16px] border border-border-light bg-border-light w-full">
               <Image

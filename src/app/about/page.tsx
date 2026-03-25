@@ -19,7 +19,10 @@ export default function AboutPage() {
         <div className="flex flex-col max-w-3xl w-full">
             
             {/* Intro section */}
-            <h2 className="mb-6 text-2xl md:text-[32px] font-semibold text-brand-text">Designing for Results. Eliminating Hesitation.</h2>
+            <h2 className="mb-6 text-2xl md:text-[32px] font-semibold text-brand-text">
+              <span className="block md:inline">Designing for Results. </span>
+              <span className="block md:inline">Eliminating Hesitation.</span>
+            </h2>
             <p className="mb-12 text-[18px] leading-[28px] text-brand-text font-medium">
               Whether it’s a fitness app or a complex AI workflow, my goal is the same: I remove the friction between a user’s intention and their end goal.
             </p>
