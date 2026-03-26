@@ -81,7 +81,7 @@ export default function Home() {
         </h1>
         <p className="text-[18px] md:text-[22px] font-normal leading-[28px] md:leading-[32px] text-brand-text/80 mb-8 max-w-2xl">
           <span className="block md:inline">Designing for Results. </span>
-          <span className="block md:inline">Eliminating Hesitation.</span>
+          <span className="block md:inline">Eliminating Friction.</span>
         </p>
         <div className="flex items-center gap-4 flex-col sm:flex-row">
           <Button href="#work">Portfolio</Button>
@@ -134,7 +134,7 @@ export default function Home() {
           <div className="w-full">
             <h2 className="mb-8">
               <span className="block md:inline">Designing for Results. </span>
-              <span className="block md:inline">Eliminating Hesitation.</span>
+              <span className="block md:inline">Eliminating Friction.</span>
             </h2>
             {/* Aspect ratio container for potential headshot later */}
             <div className="relative aspect-[4/5] md:aspect-[3/4] overflow-hidden rounded-[16px] border border-border-light bg-border-light w-full">
