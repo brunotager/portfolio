@@ -351,8 +351,7 @@ const CASE_STUDIES: Record<string, any> = {
         { label: "Role", value: "Product Designer" },
         { label: "Project type", value: "Speculative concept grounded in real business metrics" },
         { label: "Platform", value: "Mobile web e-commerce" },
-        { label: "Scope", value: "Research, interaction design, AI concept design, usability testing" },
-        { label: "Timing", value: "October 2024" }
+        { label: "Scope", value: "Research, interaction design, AI concept design, usability testing" }
       ],
       constraintsPrompt: "This project started from a real business signal: people were browsing but not buying. The goal was not to redesign the entire store. It was to reduce uncertainty at the point of decision. CycleBot was designed as a mobile-first assistant to help users navigate the product catalog more easily than traditional browsing.",
       constraints: []
@@ -634,7 +633,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
       </section>
 
       {/* Main Content constraints - using proper width like Homepage */}
-      <div className="w-full flex flex-col items-start gap-24">
+      <div className="w-full flex flex-col items-start gap-12">
 
         {/* The Problem */}
         <section className="w-full">
@@ -657,9 +656,9 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         </section>
 
         {/* Context Grid */}
-        <section className="w-full border-t border-b border-border-light py-10 my-4">
-          <h2 className="mb-8 text-2xl md:text-[32px] font-semibold text-brand-text">Context</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 gap-x-4 mb-10 w-full lg:grid-cols-4">
+        <section className="w-full border-t border-b border-border-light py-6">
+          <h2 className="mb-6 text-2xl md:text-[32px] font-semibold text-brand-text">Context</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-4 w-full lg:grid-cols-4">
             {data.context.items?.map((item: {label: string, value: string}, i: number) => (
               <div key={i}>
                 <div className="text-sm font-semibold text-brand-text/50 uppercase tracking-widest mb-2">{item.label}</div>
@@ -668,10 +667,10 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
             ))}
           </div>
           {data.context.constraintsPrompt && (
-            <p className="text-[16px] leading-[24px] text-brand-text/80 mb-4">{data.context.constraintsPrompt}</p>
+            <p className="text-[16px] leading-[24px] text-brand-text/80 mt-8 mb-0">{data.context.constraintsPrompt}</p>
           )}
           {data.context.constraints && data.context.constraints.length > 0 && (
-            <ul className="list-outside list-disc pl-6 space-y-2 text-[16px] leading-[24px] text-brand-text/80">
+            <ul className="list-outside list-disc pl-6 space-y-2 text-[16px] leading-[24px] text-brand-text/80 mt-4">
               {data.context.constraints.map((c: string, i: number) => <li key={i}>{c}</li>)}
             </ul>
           )}

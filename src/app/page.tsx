@@ -32,7 +32,7 @@ const PORTFOLIO_ITEMS = [
     title: "CCTA",
     summary: <>Lowered the barrier to mental health care by transforming a cluttered interface into a <strong>calm, goal-oriented experience.</strong></>,
     href: "/portfolio/ccta",
-    imageSrc: "/images/ccta-homepage.jpg",
+    imageSrc: "/images/ccta-homepage.png",
     imageBgColor: "#F7F6F3",
   },
 ];
@@ -77,7 +77,7 @@ export default function Home() {
       <section className="relative min-h-[80vh] flex flex-col justify-center items-center px-6 md:px-12 pt-[120px] pb-16 text-center max-w-4xl mx-auto w-full">
         <h1 className="max-w-[860px] mx-auto mb-6">
           Athlete Mindset.<br />
-          Product Clarity.
+          Product Performance.
         </h1>
         <p className="text-[18px] md:text-[22px] font-normal leading-[28px] md:leading-[32px] text-brand-text/80 mb-8 max-w-2xl">
           <span className="block md:inline">Designing for Results. </span>
@@ -149,18 +149,18 @@ export default function Home() {
           </div>
           <div className="flex flex-col max-w-[600px] pt-0 md:pt-4">
             <p className="mb-6 text-[18px] leading-[28px] text-brand-text font-medium">
-              Whether it’s a fitness app or a complex AI workflow, my goal is the same: <strong>I remove the friction between a user’s intention and their end goal.</strong>
+              Whether it’s a fitness app or a complex AI workflow, my goal is the same: I remove the friction between a user’s intention and their end goal.
             </p>
             
             <div className="text-[16px] leading-[24px] text-brand-text/75 flex flex-col">
               <h3 className="text-[20px] font-semibold text-brand-text mb-3">Three Careers. One Goal.</h3>
               <p className="mb-4">
-                I’ve built my career across three distinct industries, all centered on one thing: understanding how people move from intention to action.
+                I’ve built my career across three distinct industries, all centered on one thing: <strong>understanding how people move from intention to action.</strong>
               </p>
               <ul className="list-outside list-disc pl-6 space-y-3 mb-10 text-[16px] leading-[24px] text-brand-text/80">
                 <li><span className="font-semibold text-brand-text">Strategic Communications (6 years):</span> Managed communications for Fortune 500 clients, learning how to shape perception and move large audiences toward a specific goal without losing clarity.</li>
                 <li><span className="font-semibold text-brand-text">Operations &amp; Hospitality (8 years):</span> Built and scaled new business concepts from the ground up, focusing on how small, consistent details build the trust required to build customer loyalty.</li>
-                <li><span className="font-semibold text-brand-text">Product Development (2+ years):</span> I treat design as a practice of continuous iteration—refining every detail until the system satisfies the customer.</li>
+                <li><span className="font-semibold text-brand-text">Product Development (2+ years):</span> I treat design as a practice of continuous iteration; refining every detail until the system satisfies the customer.</li>
               </ul>
               
               <h3 className="text-[20px] font-semibold text-brand-text mb-4">Core Principles</h3>
