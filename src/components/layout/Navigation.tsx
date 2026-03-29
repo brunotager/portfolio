@@ -85,9 +85,9 @@ export function Navigation() {
             <Link href="/about" className="font-medium text-brand-text hover:text-brand-accent transition-colors duration-200">
               About
             </Link>
-            <a href="/resume.pdf" target="_blank" className="font-medium text-brand-text hover:text-brand-accent transition-colors duration-200">
+            <Link href="/resume" className="font-medium text-brand-text hover:text-brand-accent transition-colors duration-200">
               Resume
-            </a>
+            </Link>
             <Link href="/contact" className="font-medium text-brand-text hover:text-brand-accent transition-colors duration-200">
               Contact
             </Link>
@@ -138,9 +138,9 @@ export function Navigation() {
           <Link href="/about" className="text-3xl font-semibold text-brand-text">
             About
           </Link>
-          <a href="/resume.pdf" target="_blank" className="text-3xl font-semibold text-brand-text">
+          <Link href="/resume" className="text-3xl font-semibold text-brand-text">
             Resume
-          </a>
+          </Link>
           <Link href="/contact" className="text-3xl font-semibold text-brand-text">
             Contact
           </Link>
