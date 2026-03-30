@@ -31,7 +31,7 @@ const CASE_STUDIES: Record<string, any> = {
     visual_iteration: "/images/codiris-visual-2.gif",
     visual_decisions_bottom: "/images/codiris-visual-3.mp4",
     visual_outcome: "/images/codiris-visual-4.mp4",
-    subhead: "From Friction to Flow",
+    subhead: "Systems Architecture",
     subtitle: "Restoring the Product Development Lifecycle",
     problem: {
       paragraphs: [
@@ -143,12 +143,7 @@ const CASE_STUDIES: Record<string, any> = {
         <><strong className="font-semibold text-brand-text">System Stability.</strong> Stress-testing the architecture for massive data sets.</>
       ]
     },
-    nextIntro: "If I were continuing the build today, I would move past the architecture and focus on enterprise readiness for the next phase of growth:",
-    next: [
-      <><strong className="font-semibold text-brand-text">Context-Aware Onboarding.</strong> Replace generic tutorials with intent-based guides that trigger only when a user enters a specific phase.</>,
-      <><strong className="font-semibold text-brand-text">Friction Monitoring.</strong> Implement live-tracking for drop-off points between phases to identify exactly where teams lose momentum.</>,
-      <><strong className="font-semibold text-brand-text">Enterprise Scaling.</strong> Build out robust, granular collaboration models to support the complex security and permission needs of large organizations.</>
-    ],
+
     perspectiveTitle: "How Designing Codiris Shaped My Perspective",
     perspective: {
       paragraphs: [
@@ -165,26 +160,15 @@ const CASE_STUDIES: Record<string, any> = {
     visual_decisions_bottom: "/images/fit-and-fun-visual-4.gif",
     visual_outcome: "/images/fit-and-fun-visual-5.png",
     contained_visuals: ["visual_shift", "visual_decisions_title", "visual_decisions_bottom", "visual_outcome"],
-    subhead: "Designing a lightweight fitness experience that turns consistency into momentum",
+    subhead: "Behavioral Design",
+    subtitle: "Designing Momentum in the Daily Routine",
     problem: {
       paragraphs: [
-        "As adults move into their 30s and beyond, staying active becomes harder.",
-        "Not because people stop caring about their health, but because most fitness products assume people have stable time, stable motivation, and a clean routine.",
-        "What I saw consistently was simpler:"
+        "As adults move into their 30s and beyond, staying active is a real challenge. Not because people stop caring about their health, but because most fitness products assume users have consistent time, stable motivation, and a clean routine. In reality, most adults are trying to fit movement into small gaps between work, life, and fatigue.",
+        "The primary friction is not finishing a workout. It is starting one. When progress feels invisible, effort feels pointless. When effort feels pointless, consistency collapses. Fit & Fun was built to solve this by making effort visible immediately."
       ],
-      list: [
-        "Adults are trying to fit movement into small gaps between work, life, and fatigue",
-        "Motivation changes day to day",
-        "Progress feels delayed or unclear",
-        "Fitness apps demand intensity before trust is earned"
-      ],
-      conclusion: [
-        "For most adults, the challenge isn’t finishing a workout.",
-        "It is starting one.",
-        "When progress feels invisible, effort feels pointless.",
-        "When effort feels pointless, consistency collapses.",
-        "Fit & Fun was designed to make effort feel visible, immediately."
-      ]
+      list: [],
+      conclusion: []
     },
     context: {
       items: [
@@ -193,110 +177,98 @@ const CASE_STUDIES: Record<string, any> = {
         { label: "Platform", value: "Mobile App" },
         { label: "Key Focus", value: "Behavioral Design & Gamification" }
       ],
-      constraintsPrompt: "I rebuilt Fit & Fun using modern AI-assisted tools (Antigravity) to extend UX decisions beyond Figma into real interaction, motion, and state.",
-      constraints: []
+      constraintsPrompt: <>I evolved Fit & Fun from a Figma prototype into a production-ready environment using Antigravity. This allowed me to test real interaction, motion, and state beyond static frames.<br /><br /><strong className="font-semibold text-brand-text">Key Constraints:</strong></>,
+      constraints: [
+        "Prioritize \"Time-to-Start\" over workout duration.",
+        "Build for variable motivation levels instead of assuming a clean routine.",
+        "Ensure progress is visible within seconds of opening the app.",
+        "Eliminate performance guilt to protect long-term retention."
+      ]
     },
     insight: {
-      prompt: "What users described wasn’t a lack of information or a need for better workouts. They described:",
+      prompt: "What users described was a persistent trust gap. They didn't want more pressure; they wanted reassurance that showing up counted.",
       list: [
-        "Struggling to start",
-        "Feeling guilty when they fell off",
-        "Not feeling rewarded by the effort they did manage to put in"
+        "\"I lose momentum between workouts.\"",
+        "\"I feel guilty every time I miss a day.\"",
+        "\"I don't feel rewarded for the effort I actually put in.\""
       ],
-      conclusion: [
-        "They didn’t want more pressure.",
-        "They wanted reassurance.",
-        "They wanted to feel, quickly and clearly: showing up counted."
-      ]
+      conclusion: []
     },
     bet: {
       paragraphs: [
-        "If a fitness experience could reduce activation friction and make progress instantly legible, users would build momentum through completion, not intensity.",
-        "Fit & Fun bet on rewarding consistency through visible progress and calm reinforcement."
+        "Most fitness products demand intensity before they earn trust.",
+        <span key="bet-span" className="text-brand-text/80 font-normal">I bet that by reducing Time-to-start and making progress instantly visible, users will work out more.</span>
       ],
       list: []
     },
     iteration: {
       paragraphs: [
-        "v1 proved the concept: progress, levels, and a motivating character could make fitness feel friendlier.",
-        "But it also revealed a limit: in a static prototype, many decisions lived as assumptions.",
-        "In v2, rebuilding the product exposed what prototypes hide:"
+        "The Figma prototype proved that a friendly, character-driven experience could lower the barrier to entry. However, moving the design into a production-ready environment revealed what static prototypes don't:"
       ],
       prompt: "",
       list: [
-        "Hidden steps created uncertainty",
-        "Single timers made workouts feel longer than they were",
-        "Feedback needed to happen in the moment, not after the fact"
+        "Hidden steps create unnecessary friction before a workout.",
+        "Single timers make short sessions feel artificially long.",
+        "Feedback loops are too delayed to affect the user’s state."
       ],
       conclusion: [
-        "The rebuild turned conceptual design into real behavior."
+        "The rebuild prioritizes momentum."
       ]
     },
     shift: {
       paragraphs: [
-        "v1 focused on screens and flows.",
-        "v2 focused on behavior and pacing.",
-        "Instead of asking “Does this look right?” the design question became:",
-        "Does this reduce hesitation in the moment a user is deciding whether to start?",
-        "That shift changed priorities:"
+        "The transition to v2 was a shift from designing screens to designing behavior. Instead of asking if the UI looked correct, the primary design question became:",
+        <strong key="shift-q" className="font-semibold text-brand-text">Does this reduce friction the moment a user decides to start?</strong>,
+        "I changed my priorities to reflect this:"
       ],
       list: [
-        "Clarity over features",
-        "State over static screens",
-        "Feedback timed to effort, not outcomes"
+        <><strong className="font-semibold text-brand-text">Clarity over features.</strong> Every element that didn't help a user start was removed.</>,
+        <><strong className="font-semibold text-brand-text">State over static screens.</strong> I designed for the fluid transition between rest and effort.</>,
+        <><strong className="font-semibold text-brand-text">Feedback tied to effort.</strong> Rewards were linked to the act of doing, not just the final outcome.</>
       ]
     },
     decisions: [
       {
         feature: "Singular primary action",
-        rationale: "The home screen is intentionally constrained: one clear action, Start Workout. No feeds, no dashboards, no competing choices. When motivation is fragile, the interface must be decisive."
+        rationale: "The home screen is intentionally constrained to one clear action: Start Workout. I avoided feeds, dashboards, and competing choices to ensure the interface is clear and decisive."
       },
       {
-        feature: "Workout selection as gentle constraint",
-        rationale: "Users choose across time, intensity, and body focus. This reduces choice overload while preserving agency, and keeps the product moving forward."
+        feature: "Selection as a gentle constraint",
+        rationale: "Users choose time, intensity, and focus. This reduces choice overload while keeping the user moving forward."
       },
       {
-        feature: "Dual-layer progress during workouts",
-        rationale: "Progress is shown at two levels: total workout time and current step time. Users always know what’s happening now and how close they are to finishing."
+        feature: "Dual-layer progress",
+        rationale: "Real-time feedback shows both current step time and total workout time. This reduces the mental load of a session."
       },
       {
-        feature: "Steps always visible",
-        rationale: "Workout steps remain visible in a bottom sheet with the current step highlighted and the next step previewed. This reduces uncertainty and supports momentum without extra interaction."
+        feature: "Persistent step visibility",
+        rationale: "Current and upcoming steps remain visible in a persistent bottom sheet, eliminating uncertainty during the workout."
       },
       {
-        feature: "Progress shown as a journey, not a scoreboard",
-        rationale: "Levels are represented as a path that fills forward. Completion advances the avatar and unlocks the next level. No streak anxiety, no leaderboards, no performance guilt."
+        feature: "Journey-based growth",
+        rationale: "Levels are represented as a forward-filling path. I replaced leaderboards and streaks with a sense of personal growth to eliminate performance guilt."
       }
     ],
     decisionsConclusion: "",
     outcome: {
-      intro: "The rebuild made Fit & Fun lighter, clearer, and more motivating in real use.",
+      intro: "The rebuild made Fit & Fun lighter, clearer, and more motivating to use.",
+      improvedLabel: "Performance Gains",
       improved: [
-        "Lower hesitation to start",
-        "Less uncertainty during workouts",
-        "Progress felt earned through feedback",
-        "Gamification reinforced consistency without pressure"
+        <><strong className="font-semibold text-brand-text">Removed Friction.</strong> Minimal user hesitation from opening the app to starting a workout.</>,
+        <><strong className="font-semibold text-brand-text">Visible Progress.</strong> Users felt the impact of effort in real-time.</>,
+        <><strong className="font-semibold text-brand-text">Consistency without Pressure.</strong> High retention through personal growth.</>
       ],
+      challengingLabel: "The Next Optimization",
       challenging: [
-        "Balancing simplicity with long-term depth",
-        "Designing rewards that scale without becoming gimmicky"
+        <><strong className="font-semibold text-brand-text">Adaptive Personalization.</strong> Tailoring suggestions based on real behavior patterns.</>,
+        <><strong className="font-semibold text-brand-text">Supportive Notifications.</strong> Using calm reinforcement to protect the routine.</>,
+        <><strong className="font-semibold text-brand-text">Reward Scaling.</strong> Ensuring the gamification stays meaningful over months.</>
       ]
     },
-    next: [
-      "Add lightweight personalization based on behavior (not profiles)",
-      "Introduce optional routines that adapt to time patterns over weeks",
-      "Test how progression affects retention over 14–30 days",
-      "Explore a social layer that is opt-in and low pressure"
-    ],
-    perspectiveTitle: "What This Project Reinforced for Me",
+    perspectiveTitle: "How Fit & Fun Shaped My Perspective",
     perspective: {
       paragraphs: [
-        "Fit & Fun reinforced a core belief:",
-        "Consistency is not a motivation problem.",
-        "It’s a design problem.",
-        "People don’t fall off because they lack discipline.",
-        "They fall off when products introduce friction, ambiguity, or pressure at the wrong moments.",
-        "If a product asks for consistency, it has to earn it."
+        "Consistency is not a motivation problem; it is a design problem. People drop off because products introduce friction, ambiguity, or pressure at the wrong moments. If a product asks for consistency, it must earn it by removing every barrier to start. This is the athlete mindset: you don't win with a single intense effort; you win by showing up every day."
       ],
       list: []
     }
@@ -308,7 +280,8 @@ const CASE_STUDIES: Record<string, any> = {
     visual_decisions_title: "/images/cyclebot-visual-3.png",
     visual_outcome: "/images/cyclebot-visual-4.png",
     contained_visuals: ["visual_iteration", "visual_decisions_title", "visual_outcome"],
-    subhead: "Designing trust and decision support in an e-commerce experience",
+    subhead: "Conversion Strategy",
+    subtitle: "Optimizing the Path to High-Intent Purchase",
     problem: {
       paragraphs: [
         "Cyclelab was losing users at the exact moments that mattered most.",
@@ -430,12 +403,7 @@ const CASE_STUDIES: Record<string, any> = {
         "Supporting users who wanted to pause and return later"
       ]
     },
-    next: [
-      "Allow users to save progress and return without restarting",
-      "Measure conversion differences between guided and unguided flows",
-      "Introduce comparison tools for recommended bikes",
-      "Surface reviews and expert validation alongside recommendations"
-    ],
+
     perspectiveTitle: "What This Project Reinforced for Me",
     perspective: {
       paragraphs: [
@@ -455,7 +423,8 @@ const CASE_STUDIES: Record<string, any> = {
     visual_decisions_title: "/images/ccta-visual-3.jpg",
     visual_decisions_bottom: "/images/ccta-visual-4.jpg",
     contained_visuals: ["visual_decisions_title"],
-    subhead: "Designing clarity and trust for a mental health practice",
+    subhead: "User Acquisition",
+    subtitle: "Scaling Acquisition Through Clinical Trust",
     problem: {
       paragraphs: [
         "CCTA’s website was actively working against the practice.",
@@ -577,12 +546,7 @@ const CASE_STUDIES: Record<string, any> = {
         "Final implementation depends on third-party development execution"
       ]
     },
-    next: [
-      "Run short usability sessions with prospective clients",
-      "Measure homepage-to-contact conversion",
-      "Refine copy using real visitor language",
-      "Stay involved through implementation to protect design intent"
-    ],
+
     perspectiveTitle: "What This Project Reinforced for Me",
     perspective: {
       paragraphs: [
@@ -796,16 +760,6 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
            </div>
         </section>
 
-        {/* What I'd Do Next */}
-        <section className="w-full">
-          <h2 className="mb-6 text-2xl md:text-[32px] font-semibold text-brand-text">What I&apos;d Do Next</h2>
-          {data.nextIntro && (
-            <p className="text-[16px] leading-[24px] text-brand-text/80 mb-6 font-medium">{data.nextIntro}</p>
-          )}
-          <ul className="list-outside list-disc pl-6 space-y-2 text-[16px] leading-[24px] text-brand-text/80">
-            {data.next?.map((item: any, i: number) => <li key={i}>{item}</li>)}
-          </ul>
-        </section>
 
         {/* How Designing [Name] Shaped My Perspective */}
         <section className="w-full bg-brand-bg border border-border-light rounded-[16px] p-8 md:p-12 mb-12">
