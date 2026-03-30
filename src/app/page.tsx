@@ -165,7 +165,7 @@ export default function Home() {
               
               <h3 className="text-[20px] font-semibold text-brand-text mb-4">Core Principles</h3>
               <ul className="list-outside list-disc pl-6 space-y-3 mb-4 text-[16px] leading-[24px] text-brand-text/80">
-                <li><span className="font-semibold text-brand-text">Strategic Clarity:</span> I bridge the gap between business objectives and user needs, ensuring every feature is a deliberate choice that leads to a measurable outcome.</li>
+                <li><span className="font-semibold text-brand-text">Strategic Performance:</span> I bridge the gap between business objectives and user needs, ensuring every feature is a deliberate choice that leads to a measurable outcome.</li>
                 <li><span className="font-semibold text-brand-text">Retention through Visible Progress:</span> I design products that make user effort legible, turning initial curiosity into the long-term commitment that drives lifetime value.</li>
                 <li><span className="font-semibold text-brand-text">Calm Systems:</span> In health and fitness, I build high-trust environments where the interface never becomes a barrier to the user’s health goals.</li>
               </ul>

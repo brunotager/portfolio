@@ -31,42 +31,37 @@ const CASE_STUDIES: Record<string, any> = {
     visual_iteration: "/images/codiris-visual-2.gif",
     visual_decisions_bottom: "/images/codiris-visual-3.mp4",
     visual_outcome: "/images/codiris-visual-4.mp4",
-    subhead: "Designing coherence for modern product teams",
+    subhead: "From Friction to Flow",
+    subtitle: "Restoring the Product Development Lifecycle",
     problem: {
       paragraphs: [
-        "Product teams aren’t just under pressure.",
-        "They’re operating inside companies trying to keep up with constant change.",
-        "Speed expectations are rising.",
-        "Headcount is shrinking.",
-        "And when teams fail to adapt, people get laid off.",
-        "Inside that environment, the product development process has broken down:"
+        <>Product teams aren’t just under pressure. They are operating inside companies struggling to keep pace with constant change. While expectations for speed are rising, team structures are shrinking. When teams fail to adapt, the result is more than a missed deadline. It is <strong className="font-semibold text-brand-text">human layoffs</strong>.</>,
+        "Inside this high-stakes environment, the product development process is broken. Instead of a cohesive flow, the system is defined by high-friction gaps:"
       ],
       list: [
-        "Ideas live in scattered tools",
-        "Research gets buried and forgotten",
-        "Designers explain instead of build",
-        "PMs lose visibility",
-        "Engineers clean up low-quality AI output"
+        <><strong className="font-semibold text-brand-text">Ideas</strong> live in scattered, disconnected tools.</>,
+        <><strong className="font-semibold text-brand-text">Research</strong> is skipped or ignored because it is seen as a barrier to moving fast.</>,
+        <><strong className="font-semibold text-brand-text">Designers</strong> spend more time explaining and justifying than actually building.</>,
+        <><strong className="font-semibold text-brand-text">PMs</strong> lose visibility and inevitably become bottlenecks.</>,
+        <><strong className="font-semibold text-brand-text">Engineers</strong> are stuck cleaning up low-quality, hallucinated AI output.</>
       ],
       conclusion: [
-        "Everyone is busy.",
-        "Very little moves.",
-        "Codiris was created to bring coherence back to product development."
+        <>Everyone claims to be busy, yet very little actually moves. Codiris was built to strip away that friction and bring <strong className="font-semibold text-brand-text">performance</strong> back to the center of product development.</>
       ]
     },
     context: {
       items: [
-        { label: "Role", value: "Product Designer and Co-Founder" },
-        { label: "Team", value: "4 people (1 PM, 1 designer, 2 engineers)" },
-        { label: "Company stage", value: "Early-stage startup" },
-        { label: "Product", value: "Product Development Environment (IDE for product builders)" }
+        { label: "Role", value: "Product Designer & Co-Founder" },
+        { label: "Context", value: <>0→1 Early-Stage<br />Startup</> },
+        { label: "Platform", value: "Desktop Web Application" },
+        { label: "Key Focus", value: "Systems Architecture & AI Workflows" }
       ],
-      constraintsPrompt: "Key constraints shaped the work:",
+      constraintsPrompt: "Key Constraints:",
       constraints: [
-        "We had to support product teams, not solo builders",
-        "The system needed to adapt to different building styles, not enforce a single workflow",
-        "Multiplayer had to work from day one: permissions, sharing, continuity",
-        "Every design choice needed to justify its existence."
+        "Design for high-efficiency product teams rather than solo builders.",
+        "Build a system to support the creative product development process instead of enforcing a single, rigid workflow.",
+        "Enable collaboration and permissions from day one.",
+        "Validate every design choice against its impact on speed and user goals."
       ]
     },
     insight: {
@@ -78,99 +73,88 @@ const CASE_STUDIES: Record<string, any> = {
         "Progress felt like it reset whenever they switched phases"
       ],
       conclusion: [
-        "What they were describing wasn’t a missing feature.",
-        "It was a continuity gap.",
-        "That insight became the foundation of Codiris."
+        "What they were describing wasn’t a missing feature, it was a continuity gap.",
+        <><strong className="font-semibold text-brand-text">That insight became the foundation of Codiris.</strong></>
       ]
     },
     bet: {
       paragraphs: [
-        "If we could preserve intent and context as work evolved, teams wouldn’t need more tools.",
-        "They would need fewer resets.",
-        "Codiris bet on becoming a continuous environment where:"
-      ],
-      list: [
-        "Ideas evolve instead of restarting",
-        "Decisions remain visible",
-        "Progress feels cumulative, not fragmented"
+        "The solution isn't another tool. It's an integrated Product Development Environment (PDE).",
+        <span className="text-brand-text/80 font-normal">We bet that by maintaining context through the iteration process, we could eliminate the friction between development phases and prevent expensive hallucinations.</span>
       ]
     },
     iteration: {
       paragraphs: [
-        "Early versions leaned into structured phases and guidance."
+        "Early versions of Codiris focused on structured phases and guided workflows. While this provided initial clarity, we found that it introduced unnecessary friction for high-efficiency product teams. We learned that too much structure actively blocks the creative product development process."
       ],
-      prompt: "What we learned:",
+      prompt: "",
       list: [
-        "Structure improved clarity",
-        "Too much structure constrained real workflows"
+        <><strong className="font-semibold text-brand-text">Structure vs. Momentum:</strong> Forced sequences helped with onboarding but became a barrier to long-term speed.</>,
+        <><strong className="font-semibold text-brand-text">The Non-Linear Reality:</strong> Real-world building does not happen in a straight line; rigid steps constrained natural team behaviors.</>,
+        <><strong className="font-semibold text-brand-text">Support vs. Control:</strong> Teams did not want a tool that dictated their work. They wanted an environment that supported their unique rhythm.</>
       ],
       conclusion: [
-        "Teams didn’t want to be told how to build.",
-        "They wanted support that adapted to them.",
-        "This pushed the product toward flexibility over prescription."
+        "This feedback shifted the product away from enforcing a linear methodology and toward building an adaptable system that prioritizes efficiency and user decisions."
       ]
     },
     shift: {
       paragraphs: [
-        "v2 wasn’t about adding features.",
-        "It was about adapting to real usage.",
-        "That shift changed how we approached interaction, navigation, and system behavior across Codiris."
+        "The transition to v2 was not about adding more features. It was a fundamental change in how we approached system behavior. By watching how teams actually interacted with Codiris, we realized that the primary friction was not what they could do, but how they moved between phases.",
+        "We saw that users needed to jump between research, planning, design, and building instantly. This observation led us to replace the step-by-step flow with a tab-based architecture. This shift transformed Codiris from a sequence of pages into a non-linear environment. It allowed users to maintain multiple workstreams simultaneously, ensuring that they never had to choose between focus and context. It was no longer about following a path; it was about providing a workspace that matched the way builders actually think."
       ],
       list: []
     },
+    decisionsIntro: "Each of these decisions was made to reinforce continuity over friction. We prioritized flow and momentum at every level of the interface.",
     decisions: [
       {
-        feature: "Expandable phase tabs instead of hard navigation",
-        rationale: "Allowed users to move fluidly without losing context or triggering mental resets."
+        feature: "Expandable phase tabs over hard navigation",
+        rationale: "We enabled users to move fluidly across the iteration process without losing context or triggering mental resets."
       },
       {
-        feature: "Chat as the persistent system brain",
-        rationale: "Decisions, reasoning, and next steps stayed visible instead of being buried in history."
+        feature: "Chat as a persistent system brain",
+        rationale: "Strategic decisions, reasoning, and next steps remained visible within the workspace instead of being buried in a disconnected history."
       },
       {
-        feature: "Productive waiting instead of idle loading",
-        rationale: "Agent latency became planning time instead of dead time."
+        feature: "Productive waiting over idle loading",
+        rationale: "We transformed agent latency into active planning time, ensuring that technical processing never resulted in dead time for the user."
       },
       {
         feature: "Task-based design planning",
-        rationale: "Replaced abstract page selection with concrete, editable implementation plans."
+        rationale: "We replaced abstract page selection with concrete, editable implementation plans that bridged the gap between design and building."
       },
       {
-        feature: "Iris as embedded help, not external documentation",
-        rationale: "Questions were answered where work happened, not in separate tools."
+        feature: "Embedded help over external documentation",
+        rationale: "By embedding Iris directly into the workspace, we ensured that questions were answered exactly where the work happened, not in separate tools."
       }
     ],
-    decisionsConclusion: "Each decision reinforced continuity over fragmentation.",
+    decisionsConclusion: "",
     outcome: {
-      intro: "Codiris shipped and entered active iteration.",
+      intro: "Codiris moved from a rigid prototype into a functional environment for active iteration. By shifting to a tab-based PDE, we transformed the product from a series of disconnected steps into a unified system for building.",
+      improvedLabel: "Performance Gains",
       improved: [
-        "Reduced context loss across phases",
-        "Stronger alignment across roles",
-        "Higher engagement inside the environment"
+        <><strong className="font-semibold text-brand-text">Zero Context Loss.</strong> Users moved between phases without resets.</>,
+        <><strong className="font-semibold text-brand-text">Cross-Role Alignment.</strong> Direct visibility for PMs and Designers.</>,
+        <><strong className="font-semibold text-brand-text">High-Environment Retention.</strong> Sustained engagement within the tool.</>
       ],
+      challengingLabel: "The Next Optimization",
       challenging: [
-        "Onboarding first-time users",
-        "Teaching flexibility without overwhelming",
-        "Scaling collaboration for larger teams"
+        <><strong className="font-semibold text-brand-text">Intuitive Onboarding.</strong> Reducing the learning curve for the PDE model.</>,
+        <><strong className="font-semibold text-brand-text">Adaptive Guidance.</strong> Teaching flexibility without overwhelming the user.</>,
+        <><strong className="font-semibold text-brand-text">System Stability.</strong> Stress-testing the architecture for massive data sets.</>
       ]
     },
+    nextIntro: "If I were continuing the build today, I would move past the architecture and focus on enterprise readiness for the next phase of growth:",
     next: [
-      "Introduce progressive onboarding tied to user intent",
-      "Instrument phase transitions to detect friction",
-      "Expand permission and collaboration models for enterprise teams"
+      <><strong className="font-semibold text-brand-text">Context-Aware Onboarding.</strong> Replace generic tutorials with intent-based guides that trigger only when a user enters a specific phase.</>,
+      <><strong className="font-semibold text-brand-text">Friction Monitoring.</strong> Implement live-tracking for drop-off points between phases to identify exactly where teams lose momentum.</>,
+      <><strong className="font-semibold text-brand-text">Enterprise Scaling.</strong> Build out robust, granular collaboration models to support the complex security and permission needs of large organizations.</>
     ],
     perspectiveTitle: "How Designing Codiris Shaped My Perspective",
     perspective: {
       paragraphs: [
-        "Products don’t fail because teams lack tools.",
-        "They fail because systems break thinking.",
-        "Codiris pushed me to design for:"
+        "Products fail when tools break a team’s ability to think creatively. My role is to maximize momentum and provide support exactly where it is needed. When we prioritize user intent over features, the user wins. When the user wins, the product and the business win too. This is the athlete mindset in practice: optimizing the environment so the team can perform at their highest level."
       ],
-      list: [
-        "Multi-user environments",
-        "Ambiguity over certainty",
-        "Momentum over output"
-      ]
+      list: []
     }
   },
   "fit-and-fun": {
@@ -205,9 +189,9 @@ const CASE_STUDIES: Record<string, any> = {
     context: {
       items: [
         { label: "Role", value: "Product Designer" },
-        { label: "Project type", value: "Bootcamp concept rebuilt into a fully coded app" },
-        { label: "Platform", value: "Mobile" },
-        { label: "Scope", value: "End-to-end UX, interaction design, and live product behavior" }
+        { label: "Context", value: <>Mobile Health<br />Concept</> },
+        { label: "Platform", value: "Mobile App" },
+        { label: "Key Focus", value: "Behavioral Design & Gamification" }
       ],
       constraintsPrompt: "I rebuilt Fit & Fun using modern AI-assisted tools (Antigravity) to extend UX decisions beyond Figma into real interaction, motion, and state.",
       constraints: []
@@ -349,9 +333,9 @@ const CASE_STUDIES: Record<string, any> = {
     context: {
       items: [
         { label: "Role", value: "Product Designer" },
-        { label: "Project type", value: "Speculative concept grounded in real business metrics" },
-        { label: "Platform", value: "Mobile web e-commerce" },
-        { label: "Scope", value: "Research, interaction design, AI concept design, usability testing" }
+        { label: "Context", value: <>Fitness Tech<br />Concept</> },
+        { label: "Platform", value: "Mobile Web" },
+        { label: "Key Focus", value: "Conversion Strategy & E-Commerce" }
       ],
       constraintsPrompt: "This project started from a real business signal: people were browsing but not buying. The goal was not to redesign the entire store. It was to reduce uncertainty at the point of decision. CycleBot was designed as a mobile-first assistant to help users navigate the product catalog more easily than traditional browsing.",
       constraints: []
@@ -494,10 +478,10 @@ const CASE_STUDIES: Record<string, any> = {
     },
     context: {
       items: [
-        { label: "Role", value: "Product Designer (Consultant)" },
-        { label: "Project type", value: "Client website redesign" },
-        { label: "Platform", value: "Responsive web" },
-        { label: "Timing", value: "2023" }
+        { label: "Role", value: "Principal Consultant" },
+        { label: "Context", value: "Mental Health Clinic Redesign" },
+        { label: "Platform", value: "Responsive Web" },
+        { label: "Key Focus", value: "High-Trust UX & User Acquisition" }
       ],
       constraintsPrompt: "CCTA’s business goal was clear: increase qualified inbound inquiries and keep clinicians fully booked. My role was to redesign the site to support that goal while respecting the emotional context of people seeking therapy.",
       constraints: []
@@ -629,7 +613,8 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
       {/* Hero block */}
       <section className="w-full mb-16 md:mb-24 text-center">
         <h2 className="text-brand-accent text-[20px] font-semibold tracking-wide uppercase mb-6">{data.name}</h2>
-        <h1 className="mb-6">{data.subhead}</h1>
+        <h1 className={data.subtitle ? "mb-4" : "mb-6"}>{data.subhead}</h1>
+        {data.subtitle && <p className="text-[20px] md:text-[24px] font-medium leading-[32px] text-brand-text/70 mb-6 max-w-2xl mx-auto">{data.subtitle}</p>}
       </section>
 
       {/* Main Content constraints - using proper width like Homepage */}
@@ -643,15 +628,15 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
           <VisualBlock contained={data.contained_visuals?.includes('visual_problem')} src={data.visual_problem} alt={`${data.name} problem visual`} className={`mb-8 ${data.name === 'CycleBot' ? '!border-[3px] !border-[#222222]' : ''}`} />
 
           <div className="text-[16px] leading-[24px] text-brand-text/80 flex flex-col gap-4">
-            {data.problem.paragraphs?.map((p: string, i: number) => <p key={i}>{p}</p>)}
+            {data.problem.paragraphs?.map((p: any, i: number) => <p key={i}>{p}</p>)}
           </div>
           {data.problem.list && data.problem.list.length > 0 && (
             <ul className="mt-6 mb-6 list-outside list-disc pl-6 space-y-2 text-[16px] leading-[24px] text-brand-text/80">
-              {data.problem.list.map((it: string, i: number) => <li key={i}>{it}</li>)}
+              {data.problem.list.map((it: any, i: number) => <li key={i}>{it}</li>)}
             </ul>
           )}
           <div className="text-[16px] leading-[24px] text-brand-text/80 flex flex-col gap-4">
-            {data.problem.conclusion?.map((p: string, i: number) => <p key={i}>{p}</p>)}
+            {data.problem.conclusion?.map((p: any, i: number) => <p key={i}>{p}</p>)}
           </div>
         </section>
 
@@ -659,7 +644,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         <section className="w-full border-t border-b border-border-light py-6">
           <h2 className="mb-6 text-2xl md:text-[32px] font-semibold text-brand-text">Context</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-4 w-full lg:grid-cols-4">
-            {data.context.items?.map((item: {label: string, value: string}, i: number) => (
+            {data.context.items?.map((item: {label: string, value: any}, i: number) => (
               <div key={i}>
                 <div className="text-sm font-semibold text-brand-text/50 uppercase tracking-widest mb-2">{item.label}</div>
                 <div className="font-medium text-brand-text">{item.value}</div>
@@ -690,7 +675,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
             </ul>
           )}
           <div className="text-[16px] leading-[24px] text-brand-text/80 flex flex-col gap-4">
-            {data.insight.conclusion?.map((p: string, i: number) => <p key={i}>{p}</p>)}
+            {data.insight.conclusion?.map((p: any, i: number) => <p key={i}>{p}</p>)}
           </div>
         </section>
 
@@ -698,7 +683,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         <section className="w-full bg-brand-accent/5 p-8 md:p-12 rounded-[16px] border border-brand-accent/20">
           <h3 className="mb-6 text-brand-accent text-xl font-semibold">The Bet</h3>
           <div className="text-[18px] md:text-[20px] leading-[28px] md:leading-[30px] text-brand-text font-medium flex flex-col gap-4 mb-6">
-            {data.bet.paragraphs?.map((p: string, i: number) => <p key={i}>{p}</p>)}
+            {data.bet.paragraphs?.map((p: any, i: number) => <p key={i}>{p}</p>)}
           </div>
           {data.bet.list && data.bet.list.length > 0 && (
             <ul className="list-outside list-disc pl-6 space-y-2 text-[16px] leading-[24px] text-brand-text/80">
@@ -713,18 +698,18 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
           {/* Visual Container: Iteration Title */}
           <VisualBlock contained={data.contained_visuals?.includes('visual_iteration_title')} src={data.visual_iteration_title} alt={`${data.name} iteration intro visual`} className="mb-8" />
           <div className="text-[16px] leading-[24px] text-brand-text/80 flex flex-col gap-4 mb-6">
-            {data.iteration.paragraphs?.map((p: string, i: number) => <p key={i}>{p}</p>)}
+            {data.iteration.paragraphs?.map((p: any, i: number) => <p key={i}>{p}</p>)}
           </div>
           {data.iteration.prompt && (
              <p className="text-[16px] leading-[24px] text-brand-text/80 mb-4">{data.iteration.prompt}</p>
           )}
           {data.iteration.list && data.iteration.list.length > 0 && (
             <ul className="mb-6 list-outside list-disc pl-6 space-y-2 text-[16px] leading-[24px] text-brand-text/80">
-              {data.iteration.list.map((it: string, i: number) => <li key={i}>{it}</li>)}
+              {data.iteration.list.map((it: any, i: number) => <li key={i}>{it}</li>)}
             </ul>
           )}
           <div className="text-[16px] leading-[24px] text-brand-text/80 flex flex-col gap-4">
-            {data.iteration.conclusion?.map((p: string, i: number) => <p key={i}>{p}</p>)}
+            {data.iteration.conclusion?.map((p: any, i: number) => <p key={i}>{p}</p>)}
           </div>
         </section>
 
@@ -748,11 +733,14 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
 
 
 
-        {/* Key Design Decisions (v2) */}
+        {/* Key Design Decisions */}
         <section className="w-full">
-          <h2 className="mb-10 text-2xl md:text-[32px] font-semibold text-brand-text">Key Design Decisions (v2)</h2>
+          <h2 className="mb-10 text-2xl md:text-[32px] font-semibold text-brand-text">Key Design Decisions</h2>
           {/* Visual Container: Decisions Title */}
           <VisualBlock contained={data.contained_visuals?.includes('visual_decisions_title')} src={data.visual_decisions_title} alt={`${data.name} decisions intro visual`} className="mb-10" />
+          {data.decisionsIntro && (
+            <p className="text-[16px] leading-[24px] text-brand-text/80 mb-10">{data.decisionsIntro}</p>
+          )}
           <div className="grid grid-cols-1 gap-10">
             {data.decisions?.map((decision: {feature: string, rationale: string}, i: number) => (
               <div key={i} className="flex gap-6 items-start">
@@ -784,9 +772,9 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
            
            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
              <div>
-               <h3 className="mb-6 font-semibold text-[20px]">What improved</h3>
-               <ul className="space-y-4">
-                 {data.outcome.improved?.map((item: string, i: number) => (
+                <h3 className="mb-6 font-semibold text-[20px]">{data.outcome.improvedLabel || "What improved"}</h3>
+                <ul className="space-y-4">
+                  {data.outcome.improved?.map((item: any, i: number) => (
                    <li key={i} className="flex items-start gap-4">
                      <span className="text-brand-accent mt-1">✓</span>
                      <span className="text-[16px] leading-[24px] text-brand-text/80">{item}</span>
@@ -795,9 +783,9 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
                </ul>
              </div>
              <div>
-               <h3 className="mb-6 font-semibold text-[20px]">What remained challenging</h3>
-               <ul className="space-y-4">
-                 {data.outcome.challenging?.map((item: string, i: number) => (
+                <h3 className="mb-6 font-semibold text-[20px]">{data.outcome.challengingLabel || "What remained challenging"}</h3>
+                <ul className="space-y-4">
+                  {data.outcome.challenging?.map((item: any, i: number) => (
                    <li key={i} className="flex items-start gap-4">
                      <span className="text-brand-text/30 mt-1 text-[12px]">◆</span>
                      <span className="text-[16px] leading-[24px] text-brand-text/80">{item}</span>
@@ -811,8 +799,11 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         {/* What I'd Do Next */}
         <section className="w-full">
           <h2 className="mb-6 text-2xl md:text-[32px] font-semibold text-brand-text">What I&apos;d Do Next</h2>
+          {data.nextIntro && (
+            <p className="text-[16px] leading-[24px] text-brand-text/80 mb-6 font-medium">{data.nextIntro}</p>
+          )}
           <ul className="list-outside list-disc pl-6 space-y-2 text-[16px] leading-[24px] text-brand-text/80">
-            {data.next?.map((item: string, i: number) => <li key={i}>{item}</li>)}
+            {data.next?.map((item: any, i: number) => <li key={i}>{item}</li>)}
           </ul>
         </section>
 
