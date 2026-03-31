@@ -10,21 +10,22 @@ export interface CaseStudyProps {
   href: string;
   imageBgColor?: string;
   imageAlign?: "left" | "center" | "right";
+  imageFill?: boolean;
 }
 
-export function CaseStudyCard({ title, summary, imageSrc, href, imageBgColor, imageAlign = "center" }: CaseStudyProps) {
+export function CaseStudyCard({ title, summary, imageSrc, href, imageBgColor, imageAlign = "center", imageFill = false }: CaseStudyProps) {
   return (
     <Link href={href} className="group block outline-none">
       <div className="flex flex-col gap-4 focus-visible:ring-2 focus-visible:ring-brand-accent rounded-[8px] p-2 -m-2 transition-colors">
         <div 
-          className="relative aspect-video w-full overflow-hidden rounded-[8px] transition-colors duration-200 p-4"
+          className={`relative aspect-video w-full overflow-hidden rounded-[8px] transition-colors duration-200 ${imageFill ? '' : 'p-4'}`}
           style={{ backgroundColor: imageBgColor || '#0E0E0F' }}
         >          {imageSrc ? (
             <Image
               src={imageSrc}
               alt={title}
               fill
-              className={`object-contain p-4 transition-transform duration-250 ease-out group-hover:scale-[1.05] rounded-[8px] ${
+              className={`object-contain ${!imageFill ? 'p-4' : ''} transition-transform duration-250 ease-out group-hover:scale-[1.05] rounded-[8px] ${
                 imageAlign === "left" ? "object-left" : imageAlign === "right" ? "object-right" : "object-center"
               }`}
               sizes="(max-width: 768px) 100vw, 50vw"

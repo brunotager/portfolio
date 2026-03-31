@@ -680,7 +680,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         <VisualBlock contained={data.contained_visuals?.includes('visual_decisions_bottom')} src={data.visual_decisions_bottom} alt={`${data.name} decisions conclusion visual`} />
 
         {/* Outcome */}
-        <section className="w-full border-t border-border-light pt-12">
+        <section className="w-full pt-12">
            <h2 className="text-[21px] max-[390px]:text-[19px] sm:text-2xl md:text-[32px] tracking-tight sm:tracking-normal whitespace-nowrap font-semibold text-brand-text mb-6">Outcome</h2>
            <p className="text-[16px] leading-[24px] text-brand-text/80 mb-6">{data.outcome.intro}</p>
 
@@ -735,7 +735,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
       </div>
 
       {/* Back to Home CTA */}
-      <section className="w-full pt-16 border-t border-border-light text-center">
+      <section className="w-full pt-16 text-center">
          <Link href="/#work" className="inline-flex items-center gap-2 text-brand-text/60 hover:text-brand-accent transition-colors font-medium">
             <span className="transition-transform group-hover:-translate-x-1">←</span> Back to all work
          </Link>

@@ -12,7 +12,7 @@ const PORTFOLIO_ITEMS = [
     summary: <>Eliminated the continuity gap in AI workflows by <strong>creating a unified system</strong> that preserves context and prevents mental resets.</>,
     href: "/portfolio/codiris",
     imageSrc: "/images/codiris-homepage.png",
-    imageBgColor: "#0E0E0F",
+    imageBgColor: "transparent",
   },
   {
     title: "Fit & Fun",
@@ -123,6 +123,7 @@ export default function Home() {
               imageSrc={item.imageSrc}
               imageBgColor={item.imageBgColor}
               imageAlign={(item as any).imageAlign}
+              imageFill={(item as any).imageFill}
             />
           ))}
         </div>
@@ -137,14 +138,19 @@ export default function Home() {
               <span className="block md:inline">Eliminating Friction.</span>
             </h2>
             {/* Aspect ratio container for potential headshot later */}
-            <div className="relative aspect-[4/5] md:aspect-[3/4] overflow-hidden rounded-[16px] border border-border-light bg-border-light w-full">
-              <Image
-                src="/images/bruno-profile-about.jpg"
-                alt="Bruno Tager profile"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-              />
+            <div className="flex flex-col gap-6">
+              <div className="relative aspect-[4/5] md:aspect-[3/4] overflow-hidden rounded-[16px] border border-border-light bg-border-light w-full">
+                <Image
+                  src="/images/bruno-profile-about.jpg"
+                  alt="Bruno Tager profile"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                />
+              </div>
+              <p className="text-[13px] md:text-[14px] text-brand-text/50 font-medium tracking-wide">
+                Authored in Antigravity // Built with Next.js // Shipped via Vercel
+              </p>
             </div>
           </div>
           <div className="flex flex-col max-w-[600px] pt-0 md:pt-4">
