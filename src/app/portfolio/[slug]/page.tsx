@@ -280,27 +280,18 @@ const CASE_STUDIES: Record<string, any> = {
     visual_decisions_title: "/images/cyclebot-visual-3.png",
     visual_outcome: "/images/cyclebot-visual-4.png",
     contained_visuals: ["visual_iteration", "visual_decisions_title", "visual_outcome"],
-    subhead: "Conversion Strategy",
-    subtitle: "Optimizing the Path to High-Intent Purchase",
+    subhead: "Driving ROI",
+    subtitle: "Optimizing the Path to High-Value Purchase",
     problem: {
       paragraphs: [
-        "Cyclelab was losing users at the exact moments that mattered most.",
-        "Half of users dropped off while browsing.",
-        "Among those who reached checkout, 70% abandoned.",
-        "It was a decision problem.",
-        "Buying a bike is expensive, technical, and personal.",
-        "Online, users lacked confidence that they were choosing the right bike.",
-        "What we saw consistently:"
+        "Cyclelab was losing users at the exact moments that mattered most:"
       ],
       list: [
-        "Users felt overwhelmed by options",
-        "They missed expert guidance they’d expect in-store",
-        "They were unsure how recommendations were made",
-        "They hesitated before committing, then left"
+        "50% of users dropped off while browsing.",
+        "70% of those who reached checkout abandoned their carts."
       ],
       conclusion: [
-        "The business impact was clear:",
-        "If users didn’t trust their decision, they didn’t convert."
+        "This was a trust problem. Buying a bike is expensive, technical, and personal. Without the expert guidance expected in-store, online users felt overwhelmed by options and lacked the confidence to choose the right product. The business impact was clear: if users didn’t trust their decision, they didn’t make a purchase."
       ]
     },
     context: {
@@ -308,116 +299,101 @@ const CASE_STUDIES: Record<string, any> = {
         { label: "Role", value: "Product Designer" },
         { label: "Context", value: <>Fitness Tech<br />Concept</> },
         { label: "Platform", value: "Mobile Web" },
-        { label: "Key Focus", value: "Conversion Strategy & E-Commerce" }
+        { label: "Key Focus", value: "Driving ROI & E-Commerce Design" }
       ],
-      constraintsPrompt: "This project started from a real business signal: people were browsing but not buying. The goal was not to redesign the entire store. It was to reduce uncertainty at the point of decision. CycleBot was designed as a mobile-first assistant to help users navigate the product catalog more easily than traditional browsing.",
-      constraints: []
+      constraintsPrompt: <>This project started from a real business signal: people were browsing but not buying. I transformed the experience from a traditional e-commerce website into a mobile-first AI assistant designed to build trust.<br /><br /><strong className="font-semibold text-brand-text">Key Constraints:</strong></>,
+      constraints: [
+        "Help users identify the right bike without feeling overwhelmed.",
+        "Replicate real-life expert guidance in an online environment.",
+        "Explain the logic behind recommendations to build trust.",
+        "Remove friction points during the buying process."
+      ]
     },
     insight: {
-      prompt: "Users didn’t say they wanted “better UX.” They said things like:",
+      prompt: "Users didn’t ask for better UX or technical certainty. They asked for support. They needed Cyclebot to have their back and help them think through a large, complex purchase.",
       list: [
         "“I’m not sure this is the right bike for me.”",
         "“I wish I could talk to someone who knows bikes.”",
         "“I don’t want to make a mistake at this price.”"
       ],
-      conclusion: [
-        "What they were describing was a lack of confidence.",
-        "They didn’t need more filters.",
-        "They needed reassurance.",
-        "That reframed the problem from discovery to decision support."
-      ]
+      conclusion: []
     },
     bet: {
       paragraphs: [
-        "If Cyclelab could replicate the feeling of expert guidance online, users would feel confident enough to commit.",
-        "Trust, not persuasion, was the missing lever.",
-        "CycleBot was designed as an AI bike expert that could:"
-      ],
-      list: [
-        "Ask the right questions",
-        "Explain recommendations clearly",
-        "Reduce anxiety around high-value decisions"
-      ]
-    },
-    iteration: {
-      paragraphs: [
-        "The first version leaned heavily on a questionnaire model.",
-        "It technically worked, but testing revealed problems:"
-      ],
-      prompt: "",
-      list: [
-        "Users weren’t sure if they were chatting or filling a form",
-        "The AI’s role wasn’t immediately clear",
-        "Input options (voice, camera, text) created early confusion"
-      ],
-      conclusion: [
-        "Instead of helping, the interface added cognitive load.",
-        "Iteration shifted the experience from “answering questions” to “having a conversation.”",
-        "That change alone dramatically improved clarity and engagement."
-      ]
-    },
-    shift: {
-      paragraphs: [
-        "Early designs focused on accuracy.",
-        "Later designs focused on confidence.",
-        "The key shift was realizing that users didn’t need perfect recommendations.",
-        "They needed to understand why a recommendation made sense.",
-        "Design decisions moved from optimization to explanation."
+        "Trust, not persuasion, is the key for high-ticket purchases.",
+        <span key="bet-span" className="text-brand-text/80 font-normal">I bet that by replicating real-life expert guidance and making sound recommendations, I will reverse the browsing drop-off and recover abandoned carts.</span>
       ],
       list: []
     },
+    iteration: {
+      paragraphs: [
+        "The first prototype leaned heavily on a questionnaire model. While it technically gathered data, testing revealed that it added cognitive load. Users felt they were filling out a form rather than receiving advice, and the AI's role was unclear.",
+        "I shifted the experience from answering questions to having a conversation. This change alone improved clarity and engagement. By making the interface responsive and dialogue-driven, the product moved from a data-collection tool to a decision-support system."
+      ],
+      prompt: "",
+      list: [],
+      conclusion: []
+    },
+    shift: {
+      paragraphs: [
+        "Early designs focused on recommendation accuracy. Later designs focused on building trust. I realized that the value wasn't in finding the \"one\" perfect bike, but in helping the user understand why a selection fit their needs.",
+        "I changed my priorities to reflect this:"
+      ],
+      list: [
+        <><strong className="font-semibold text-brand-text">Reasoning over perfection.</strong> Three good recommendations with clear reasons are more valuable than one perfect recommendation.</>,
+        <><strong className="font-semibold text-brand-text">Context over information.</strong> I focused on how the advice was delivered, not just the data points.</>,
+        <><strong className="font-semibold text-brand-text">Support over speed.</strong> I prioritized helping the user feel safe in their choice over rushing them to the checkout.</>
+      ]
+    },
+    decisionsIntro: "",
     decisions: [
       {
-        feature: "Conversational AI over static questionnaires",
-        rationale: "CycleBot was presented as a clear, named AI expert, not a form disguised as chat."
+        feature: "Conversational AI over static forms",
+        rationale: "I presented Cyclebot as a named AI expert to set clear expectations and move away from the \"survey\" feel."
       },
       {
-        feature: "Progressive disclosure of inputs",
-        rationale: "Advanced inputs like camera and measurements were introduced only when relevant."
+        feature: "Progressive disclosure of interactive features",
+        rationale: "Advanced options like camera measurements were introduced only when they became relevant to the user."
       },
       {
-        feature: "Recommendation justification",
-        rationale: "Users could see why a bike was recommended, not just what was recommended."
+        feature: "Transparent recommendation logic",
+        rationale: "I made sure users could see why a bike was suggested by integrating customer reviews and linking features to their specific needs."
       },
       {
-        feature: "Guest checkout as default",
-        rationale: "Account creation was removed from the moment of commitment to reduce friction."
+        feature: "Guest checkout as the default",
+        rationale: "I removed account creation from the purchasing flow to eliminate unnecessary friction."
       },
       {
-        feature: "Problem logs driving iteration",
-        rationale: "Each test produced a prioritized problem log to guide the next design pass."
+        feature: "Data-driven iteration",
+        rationale: "I used prioritized problem logs from every user test to make sure each design update solved a specific friction point."
       }
     ],
     decisionsConclusion: "",
     outcome: {
-      intro: "The final prototype showed clear improvements.",
+      intro: "The final prototype transformed the shopping experience from standard website browsing into an active, confident purchase.",
+      improvedLabel: "Performance Gains",
       improved: [
-        "Users understood CycleBot’s role earlier",
-        "Conversations felt more natural",
-        "Recommendations felt more trustworthy",
-        "Checkout friction was reduced"
+        <><strong className="font-semibold text-brand-text">Higher Role Clarity.</strong> Users understood Cyclebot’s value immediately.</>,
+        <><strong className="font-semibold text-brand-text">Natural Engagement.</strong> Conversations felt like expert guidance.</>,
+        <><strong className="font-semibold text-brand-text">Removed Purchasing Friction.</strong> Smoother transition through the checkout flow.</>
       ],
+      challengingLabel: "The Next Optimization",
       challenging: [
-        "Building enough reassurance for high-value purchases",
-        "Helping users compare options side by side",
-        "Supporting users who wanted to pause and return later"
+        <><strong className="font-semibold text-brand-text">Comparative Analysis.</strong> Helping users compare top options side-by-side.</>,
+        <><strong className="font-semibold text-brand-text">Session Persistence.</strong> Supporting users who want to pause and return later.</>,
+        <><strong className="font-semibold text-brand-text">Post-Purchase Trust.</strong> Extending the guidance into assembly and fit.</>
       ]
     },
-
-    perspectiveTitle: "What This Project Reinforced for Me",
+    perspectiveTitle: "How Cyclebot Shaped My Perspective",
     perspective: {
       paragraphs: [
-        "Conversion isn’t driven by pressure.",
-        "It’s driven by confidence.",
-        "Users don’t abandon because they’re indecisive.",
-        "They abandon because they don’t feel safe committing.",
-        "CycleBot reinforced how good design drives outcomes by helping people make better decisions, not faster ones."
+        "Conversion is not driven by pressure; it is driven by trust. Users don’t abandon because they are indecisive. They abandon because they don't feel safe committing to a high-stakes purchase. This project reinforced that my role is to design for better decisions, not just faster ones. This is the athlete mindset: you don't win by rushing the shot; you win by setting up the play so the team can execute with total confidence."
       ],
       list: []
     }
   },
   "ccta": {
-    name: "Center for Cognitive Therapy and Assessment",
+    name: "CCTA",
     visual_problem: "/images/ccta-visual-1.jpg",
     visual_iteration_title: "/images/ccta-visual-2.jpg",
     visual_decisions_title: "/images/ccta-visual-3.jpg",
@@ -586,7 +562,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
 
         {/* The Problem */}
         <section className="w-full">
-          <h2 className="mb-6 text-2xl md:text-[32px] font-semibold text-brand-text">The Problem</h2>
+          <h2 className="mb-6 text-[21px] max-[390px]:text-[19px] sm:text-2xl md:text-[32px] tracking-tight sm:tracking-normal whitespace-nowrap font-semibold text-brand-text">The Problem</h2>
 
           {/* Visual Container: Problem */}
           <VisualBlock contained={data.contained_visuals?.includes('visual_problem')} src={data.visual_problem} alt={`${data.name} problem visual`} className={`mb-8 ${data.name === 'CycleBot' ? '!border-[3px] !border-[#222222]' : ''}`} />
@@ -606,7 +582,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
 
         {/* Context Grid */}
         <section className="w-full border-t border-b border-border-light py-6">
-          <h2 className="mb-6 text-2xl md:text-[32px] font-semibold text-brand-text">Context</h2>
+          <h2 className="mb-6 text-[21px] max-[390px]:text-[19px] sm:text-2xl md:text-[32px] tracking-tight sm:tracking-normal whitespace-nowrap font-semibold text-brand-text">Context</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-4 w-full lg:grid-cols-4">
             {data.context.items?.map((item: {label: string, value: any}, i: number) => (
               <div key={i}>
@@ -629,7 +605,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
 
         {/* Insight */}
         <section className="w-full">
-          <h2 className="mb-6 text-2xl md:text-[32px] font-semibold text-brand-text">Insight</h2>
+          <h2 className="mb-6 text-[21px] max-[390px]:text-[19px] sm:text-2xl md:text-[32px] tracking-tight sm:tracking-normal whitespace-nowrap font-semibold text-brand-text">Insight</h2>
           {data.insight.prompt && (
             <p className="text-[16px] leading-[24px] text-brand-text/80 mb-4">{data.insight.prompt}</p>
           )}
@@ -658,7 +634,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
 
         {/* Iteration That Mattered */}
         <section className="w-full">
-          <h2 className="mb-6 text-2xl md:text-[32px] font-semibold text-brand-text">Iteration That Mattered</h2>
+          <h2 className="mb-6 text-[21px] max-[390px]:text-[19px] sm:text-2xl md:text-[32px] tracking-tight sm:tracking-normal whitespace-nowrap font-semibold text-brand-text">Iteration That Mattered</h2>
           {/* Visual Container: Iteration Title */}
           <VisualBlock contained={data.contained_visuals?.includes('visual_iteration_title')} src={data.visual_iteration_title} alt={`${data.name} iteration intro visual`} className="mb-8" />
           <div className="text-[16px] leading-[24px] text-brand-text/80 flex flex-col gap-4 mb-6">
@@ -682,7 +658,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
 
         {/* The Shift in Thinking */}
         <section className="w-full mt-4">
-          <h2 className="mb-6 text-2xl md:text-[32px] font-semibold text-brand-text">The Shift in Thinking</h2>
+          <h2 className="mb-6 text-[21px] max-[390px]:text-[19px] sm:text-2xl md:text-[32px] tracking-tight sm:tracking-normal whitespace-nowrap font-semibold text-brand-text">The Shift in Thinking</h2>
           {/* Visual Container: Shift */}
           <VisualBlock contained={data.contained_visuals?.includes('visual_shift')} src={data.visual_shift} alt={`${data.name} shift visual`} className="mb-8" />
           <div className="text-[16px] leading-[24px] text-brand-text/80 flex flex-col gap-4">
@@ -699,7 +675,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
 
         {/* Key Design Decisions */}
         <section className="w-full">
-          <h2 className="mb-10 text-2xl md:text-[32px] font-semibold text-brand-text">Key Design Decisions</h2>
+          <h2 className="mb-10 text-[21px] max-[390px]:text-[19px] sm:text-2xl md:text-[32px] tracking-tight sm:tracking-normal whitespace-nowrap font-semibold text-brand-text">Key Design Decisions</h2>
           {/* Visual Container: Decisions Title */}
           <VisualBlock contained={data.contained_visuals?.includes('visual_decisions_title')} src={data.visual_decisions_title} alt={`${data.name} decisions intro visual`} className="mb-10" />
           {data.decisionsIntro && (
@@ -728,7 +704,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
 
         {/* Outcome */}
         <section className="w-full border-t border-border-light pt-12">
-           <h2 className="text-2xl md:text-[32px] font-semibold text-brand-text mb-6">Outcome</h2>
+           <h2 className="text-[21px] max-[390px]:text-[19px] sm:text-2xl md:text-[32px] tracking-tight sm:tracking-normal whitespace-nowrap font-semibold text-brand-text mb-6">Outcome</h2>
            <p className="text-[16px] leading-[24px] text-brand-text/80 mb-6">{data.outcome.intro}</p>
 
            {/* Visual Container: Outcome */}
@@ -763,7 +739,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
 
         {/* How Designing [Name] Shaped My Perspective */}
         <section className="w-full bg-brand-bg border border-border-light rounded-[16px] p-8 md:p-12 mb-12">
-          <h2 className="mb-8 text-2xl md:text-[32px] font-semibold text-brand-text">{data.perspectiveTitle || "Reflection"}</h2>
+          <h2 className="mb-8 text-[21px] max-[390px]:text-[19px] sm:text-2xl md:text-[32px] tracking-tight sm:tracking-normal font-semibold text-brand-text">{data.perspectiveTitle || "Reflection"}</h2>
           <div className="text-[16px] leading-[24px] text-brand-text/80 flex flex-col gap-4 mb-8">
             {data.perspective.paragraphs?.map((p: string, i: number) => <p key={i}>{p}</p>)}
           </div>
