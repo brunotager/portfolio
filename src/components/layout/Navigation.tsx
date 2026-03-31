@@ -8,7 +8,7 @@ const PORTFOLIO_ITEMS = [
   { name: "Codiris", role: "Systems Architecture", href: "/portfolio/codiris" },
   { name: "Fit & Fun", role: "Behavioral Design", href: "/portfolio/fit-and-fun" },
   { name: "CycleBot", role: "Driving ROI", href: "/portfolio/cyclebot" },
-  { name: "CCTA", role: "User Acquisition", href: "/portfolio/ccta" },
+  { name: "CCTA", role: "High-Trust UX", href: "/portfolio/ccta" },
 ];
 
 export function Navigation() {

@@ -399,26 +399,22 @@ const CASE_STUDIES: Record<string, any> = {
     visual_decisions_title: "/images/ccta-visual-3.jpg",
     visual_decisions_bottom: "/images/ccta-visual-4.jpg",
     contained_visuals: ["visual_decisions_title"],
-    subhead: "User Acquisition",
+    subhead: "High-Trust UX",
     subtitle: "Scaling Acquisition Through Clinical Trust",
     problem: {
       paragraphs: [
-        "CCTA’s website was actively working against the practice.",
-        "Despite high-quality services, the site failed to communicate trust, clarity, or ease of access.",
-        "Key issues surfaced immediately:"
+        "CCTA’s website was a barrier to the practice’s growth. Despite offering high-quality clinical services, the digital experience failed to communicate trust, clarity, or ease of access.",
+        "The friction was immediate:"
       ],
       list: [
-        "The homepage carousel consumed prime space without explaining services",
-        "Low contrast text reduced readability and accessibility",
-        "Large blocks of centered copy were difficult to scan",
-        "Dark overlays created a somber tone misaligned with therapy",
-        "Authority and credibility were unclear",
-        "Generic imagery added noise instead of reassurance"
+        <><strong className="font-semibold text-brand-text">Cluttered Hero Space.</strong> The homepage carousel consumed prime space without explaining services.</>,
+        <><strong className="font-semibold text-brand-text">Accessibility Failures.</strong> Low contrast text reduced readability and accessibility.</>,
+        <><strong className="font-semibold text-brand-text">Unscannable Layout.</strong> Large blocks of centered copy were difficult to scan and digest.</>,
+        <><strong className="font-semibold text-brand-text">Tone Misalignment.</strong> Dark overlays and generic imagery created a somber, heavy atmosphere that increased user anxiety.</>,
+        <><strong className="font-semibold text-brand-text">Broken Inquiry Paths.</strong> Visitors couldn’t quickly find how to get started, leading to missed inquiries and unbooked clinicians.</>
       ],
       conclusion: [
-        "For a mental health practice, this wasn’t just a design flaw.",
-        "It meant missed inquiries and lost potential clients.",
-        "If website visitors couldn’t quickly understand what CCTA offered or how to get started, they left."
+        <>For a mental health practice, a confusing interface is more than a design flaw; <strong className="font-semibold text-brand-text">it was an obstacle for people who were just looking for help and support.</strong></>
       ]
     },
     context: {
@@ -428,116 +424,97 @@ const CASE_STUDIES: Record<string, any> = {
         { label: "Platform", value: "Responsive Web" },
         { label: "Key Focus", value: "High-Trust UX & User Acquisition" }
       ],
-      constraintsPrompt: "CCTA’s business goal was clear: increase qualified inbound inquiries and keep clinicians fully booked. My role was to redesign the site to support that goal while respecting the emotional context of people seeking therapy.",
-      constraints: []
+      constraintsPrompt: <>CCTA’s business goal was clear: increase qualified inbound leads and keep clinicians fully booked. My role was to redesign the site to support that goal while respecting the emotional context of people seeking therapy. I focused on building authority while respecting the sensitive emotional state of people seeking therapy.<br /><br /><strong className="font-semibold text-brand-text">Key Constraints:</strong></>,
+      constraints: [
+        "Establish clinical authority without sacrificing warmth.",
+        "Design for high-anxiety users who need immediate clarity.",
+        "Optimize accessibility so the site is inclusive and usable for everyone.",
+        "Streamline the path from first visit to booked inquiry."
+      ]
     },
     insight: {
-      prompt: "Two assumptions guided the work:",
+      prompt: "Visitors seeking therapy are often in a state of high anxiety or uncertainty. They don’t need a heavy, information-dense interface; they need to feel calm, oriented, and supported within the first few seconds.",
       list: [
-        "First, people searching for therapy are often anxious or uncertain.",
-        "Second, a cluttered or heavy interface increases hesitation."
+        "“I’m overwhelmed and I just need to know if they can help me.”",
+        "“The site feels heavy and dark; it makes me feel more anxious.”",
+        "“I can’t tell which therapist is right for my specific needs.”"
       ],
       conclusion: [
-        "Through competitive analysis, website audits, and clinician conversations, those assumptions were validated.",
-        "Visitors need to feel calm, oriented, and informed before they feel ready to reach out.",
-        "The issue wasn’t missing information.",
-        "It was cognitive overload at the wrong moment."
+        "The issue was not a lack of information. It was cognitive overload at the exact moment a user needed a clear path forward."
       ]
     },
     bet: {
       paragraphs: [
-        "If the website could communicate professionalism, warmth, and clarity within the first few seconds, visitors would feel safe enough to take the next step.",
-        "Lowering emotional friction would increase inquiry volume."
+        "In mental health, trust is the product and clarity is the strategy.",
+        <span key="bet-span" className="text-brand-text/80 font-normal">I bet that by replacing emotional friction with professional warmth and simplified navigation, I will increase the volume of qualified inbound leads and maximize clinician booking rates.</span>
       ],
       list: []
     },
     iteration: {
       paragraphs: [
-        "The most impactful change was removing the homepage carousel and replacing it with a single, calming hero section.",
-        "This clarified what CCTA does and set the right emotional tone immediately.",
-        "From there, iteration focused on simplifying and restructuring the rest of the homepage.",
-        "Service categories were redesigned for readability and accessibility.",
-        "Contrast was improved.",
-        "Centered text blocks were rewritten and realigned for scanability.",
-        "Navigation labels were rewritten to guide visitors through a logical story:"
+        "The most impactful change was removing the homepage carousel and replacing it with a single, calming hero section. This clarified CCTA’s value proposition and set a professional tone immediately.",
+        "From there, iteration focused on clarity over density. I restructured service categories into accessible cards, improved visual contrast, and realigned text for better scanability. Each round of feedback reinforced the same direction: if the user has to work to find the information, they will leave before they ever reach out."
       ],
       prompt: "",
-      list: [
-        "How It Works",
-        "How We Can Help",
-        "Who We Are",
-        "Get Started"
-      ],
-      conclusion: [
-        "Each round of feedback reinforced the same direction: increase clarity."
-      ]
+      list: [],
+      conclusion: []
     },
     shift: {
       paragraphs: [
-        "The shift wasn’t visual.",
-        "It was strategic.",
-        "Instead of asking, “How do we showcase everything?”",
-        "the question became, “What does someone need to understand and feel before reaching out?”",
-        "That reframing prioritized:"
+        "The shift for CCTA was not about aesthetics. It was a strategic pivot in how we treated the visitor’s journey. Instead of asking how to showcase everything the practice offered, I asked: “What does a person in distress need to feel before they are ready to reach out?”",
+        "This reframing prioritized:"
       ],
       list: [
-        "Clarity over density",
-        "Guidance over decoration",
-        "Confidence over cleverness"
+        <><strong className="font-semibold text-brand-text">Guidance over decoration.</strong> Every visual element had to serve a functional purpose in building trust.</>,
+        <><strong className="font-semibold text-brand-text">Confidence over cleverness.</strong> I chose clear, direct navigation labels over “creative” headings.</>,
+        <><strong className="font-semibold text-brand-text">Calm over heaviness.</strong> I moved the system toward a light, breathable UI to reduce the user's mental load.</>
       ]
     },
+    decisionsIntro: "",
     decisions: [
       {
-        feature: "Replaced carousel with a focused hero section",
-        rationale: "Removed rotating content and replaced it with a single, calming message aligned with the practice’s tone."
+        feature: "Focused hero section",
+        rationale: "I replaced the rotating carousel with a single, calming message that aligned with the practice’s therapeutic tone."
       },
       {
-        feature: "Restructured service content into accessible cards",
-        rationale: "Separated imagery and text, improved contrast, and made services easier to scan."
+        feature: "Accessible service architecture",
+        rationale: "I restructured the services provided into scannable cards with improved contrast to ensure information was easy to digest and inclusive."
       },
       {
-        feature: "Rewrote navigation for emotional flow",
-        rationale: "Organized menu titles to guide visitors from understanding to action."
+        feature: "Emotionally-driven navigation",
+        rationale: "I reorganized the menu into a logical story: How It Works, How We Can Help, Who We Are, and Get Started."
       },
       {
-        feature: "Unified color system for visual calm",
-        rationale: "Established a consistent light background with a refined primary blue to reduce visual heaviness."
+        feature: "Unified “Visual Calm” system",
+        rationale: "I established a consistent light background with a refined primary blue to eliminate the somber tone of the previous site."
       },
       {
-        feature: "Humanized the homepage with equitable clinician representation",
-        rationale: "Introduced a horizontally scrollable clinician section to showcase all practitioners without hierarchy."
+        feature: "Equitable clinician representation",
+        rationale: "I introduced a horizontally scrollable section to showcase all practitioners without hierarchy, humanizing the brand while maintaining a professional feel."
       }
     ],
     decisionsConclusion: "",
     outcome: {
-      intro: "The redesign delivers a calmer, clearer, and more trustworthy experience.",
+      intro: "The redesign established a high-trust starting point for anyone seeking help.",
+      improvedLabel: "Performance Gains",
       improved: [
-        "Services are easier to understand",
-        "Paths to contact are clearer and more visible",
-        "Visual tone aligns with the therapeutic context",
-        "Stakeholders feel accurately and fairly represented"
+        <><strong className="font-semibold text-brand-text">Immediate Role Clarity.</strong> Users understand the service offerings within seconds.</>,
+        <><strong className="font-semibold text-brand-text">Optimized Inquiry Flow.</strong> Clearer calls-to-action led to more direct inquiries.</>,
+        <><strong className="font-semibold text-brand-text">Improved Accessibility.</strong> Reached WCAG standards for contrast and scanability.</>
       ],
+      challengingLabel: "The Next Optimization",
       challenging: [
-        "Formal user testing is limited by scope and budget",
-        "Final implementation depends on third-party development execution"
+        <><strong className="font-semibold text-brand-text">Direct Usability Testing.</strong> Run short usability sessions with prospective clients to refine the flow.</>,
+        <><strong className="font-semibold text-brand-text">Conversion Tracking.</strong> Measure homepage-to-contact conversion to identify remaining friction.</>,
+        <><strong className="font-semibold text-brand-text">Agency Handoff.</strong> Coordinate the agency handoff to protect the design's integrity and emotional tone.</>
       ]
     },
-
-    perspectiveTitle: "What This Project Reinforced for Me",
+    perspectiveTitle: "How CCTA Shaped My Perspective",
     perspective: {
       paragraphs: [
-        "In mental health, design directly affects access.",
-        "Small choices in layout, tone, and structure can either lower the barrier to care or quietly increase it.",
-        "This project reinforced the importance of:"
+        "In mental health, design directly affects the path to care. Small choices in layout, tone, and structure can either lower the barrier to care or quietly open the door. This project reinforced that when trust is the product, clarity must be the strategy. This is the athlete mindset: you win by clearing the hurdles before the user even reaches them. By removing friction and providing a clear path, the user finds help and the business achieves its goals."
       ],
-      list: [
-        "Designing for emotional context",
-        "Reducing cognitive load before asking for commitment",
-        "Aligning business goals with human sensitivity"
-      ],
-      conclusion: [
-        "When trust is the product, clarity becomes the strategy."
-      ]
+      list: []
     }
   }
 };
