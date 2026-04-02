@@ -6,12 +6,12 @@ function VisualBlock({ src, alt, className = "my-4", contained = false }: { src?
   if (!src) return null;
   
   const imageClasses = contained 
-    ? "h-auto block w-full max-w-[280px] sm:max-w-[360px] md:max-w-[400px] lg:max-w-[450px] mx-auto my-6 border border-border-dark/20 rounded-[8px]" 
-    : "w-full h-auto block";
+    ? "h-auto block w-full max-w-[280px] sm:max-w-[360px] md:max-w-[400px] lg:max-w-[450px] mx-auto my-6 rounded-[8px]" 
+    : "w-auto max-w-full h-auto max-h-[70vh] block mx-auto";
     
   const containerClasses = contained
-    ? `w-full rounded-[16px] overflow-hidden relative border border-border-dark bg-border-light/40 flex justify-center py-8 ${className}`
-    : `w-full rounded-[16px] overflow-hidden relative border border-border-dark ${className}`;
+    ? `w-full rounded-[16px] overflow-hidden relative bg-border-light/40 flex justify-center py-8 ${className}`
+    : `w-fit mx-auto rounded-[16px] overflow-hidden relative flex justify-center ${className}`;
 
   return (
     <div className={containerClasses}>
@@ -158,8 +158,7 @@ const CASE_STUDIES: Record<string, any> = {
     visual_shift: "/images/fit-and-fun-visual-2.png",
     visual_decisions_title: "/images/fit-and-fun-visual-3.png",
     visual_decisions_bottom: "/images/fit-and-fun-visual-4.gif",
-    visual_outcome: "/images/fit-and-fun-visual-5.png",
-    contained_visuals: ["visual_shift", "visual_decisions_title", "visual_decisions_bottom", "visual_outcome"],
+    visual_outcome: "/images/fit-and-fun-demo.mp4",
     subhead: "Behavioral Design",
     subtitle: "Designing Momentum in the Daily Routine",
     problem: {
@@ -278,8 +277,7 @@ const CASE_STUDIES: Record<string, any> = {
     visual_problem: "/images/cyclebot-visual-1.png",
     visual_iteration: "/images/cyclebot-visual-2.png",
     visual_decisions_title: "/images/cyclebot-visual-3.png",
-    visual_outcome: "/images/cyclebot-visual-4.png",
-    contained_visuals: ["visual_iteration", "visual_decisions_title", "visual_outcome"],
+    visual_outcome: "/images/cyclebot-demo.mp4",
     subhead: "Driving ROI",
     subtitle: "Optimizing the Path to High-Value Purchase",
     problem: {
@@ -398,7 +396,6 @@ const CASE_STUDIES: Record<string, any> = {
     visual_iteration_title: "/images/ccta-visual-2.jpg",
     visual_decisions_title: "/images/ccta-visual-3.jpg",
     visual_decisions_bottom: "/images/ccta-visual-4.jpg",
-    contained_visuals: ["visual_decisions_title"],
     subhead: "High-Trust UX",
     subtitle: "Scaling Acquisition Through Clinical Trust",
     problem: {
