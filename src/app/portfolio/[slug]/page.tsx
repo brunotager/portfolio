@@ -56,7 +56,7 @@ const CASE_STUDIES: Record<string, any> = {
         { label: "Platform", value: "Desktop Web Application" },
         { label: "Key Focus", value: "Systems Architecture & AI Workflows" }
       ],
-      constraintsPrompt: "Key Constraints:",
+      constraintsPrompt: "Product Goals:",
       constraints: [
         "Design for high-efficiency product teams rather than solo builders.",
         "Build a system to support the creative product development process instead of enforcing a single, rigid workflow.",
@@ -176,7 +176,7 @@ const CASE_STUDIES: Record<string, any> = {
         { label: "Platform", value: "Mobile App" },
         { label: "Key Focus", value: "Behavioral Design & Gamification" }
       ],
-      constraintsPrompt: <>I evolved Fit & Fun from a Figma prototype into a production-ready environment using Antigravity. This allowed me to test real interaction, motion, and state beyond static frames.<br /><br /><strong className="font-semibold text-brand-text">Key Constraints:</strong></>,
+      constraintsPrompt: <>I evolved Fit & Fun from a Figma prototype into a production-ready environment using Antigravity. This allowed me to test real interaction, motion, and state beyond static frames.<br /><br /><strong className="font-semibold text-brand-text">Product Goals:</strong></>,
       constraints: [
         "Prioritize \"Time-to-Start\" over workout duration.",
         "Build for variable motivation levels instead of assuming a clean routine.",
@@ -299,7 +299,7 @@ const CASE_STUDIES: Record<string, any> = {
         { label: "Platform", value: "Mobile Web" },
         { label: "Key Focus", value: "Driving ROI & E-Commerce Design" }
       ],
-      constraintsPrompt: <>This project started from a real business signal: people were browsing but not buying. I transformed the experience from a traditional e-commerce website into a mobile-first AI assistant designed to build trust.<br /><br /><strong className="font-semibold text-brand-text">Key Constraints:</strong></>,
+      constraintsPrompt: <>This project started from a real business signal: people were browsing but not buying. I transformed the experience from a traditional e-commerce website into a mobile-first AI assistant designed to build trust.<br /><br /><strong className="font-semibold text-brand-text">Product Goals:</strong></>,
       constraints: [
         "Help users identify the right bike without feeling overwhelmed.",
         "Replicate real-life expert guidance in an online environment.",
@@ -421,7 +421,7 @@ const CASE_STUDIES: Record<string, any> = {
         { label: "Platform", value: "Responsive Web" },
         { label: "Key Focus", value: "High-Trust UX & User Acquisition" }
       ],
-      constraintsPrompt: <>CCTA’s business goal was clear: increase qualified inbound leads and keep clinicians fully booked. My role was to redesign the site to support that goal while respecting the emotional context of people seeking therapy. I focused on building authority while respecting the sensitive emotional state of people seeking therapy.<br /><br /><strong className="font-semibold text-brand-text">Key Constraints:</strong></>,
+      constraintsPrompt: <>CCTA’s business goal was clear: increase qualified inbound leads and keep clinicians fully booked. My role was to redesign the site to support that goal while respecting the emotional context of people seeking therapy. I focused on building authority while respecting the sensitive emotional state of people seeking therapy.<br /><br /><strong className="font-semibold text-brand-text">Product Goals:</strong></>,
       constraints: [
         "Establish clinical authority without sacrificing warmth.",
         "Design for high-anxiety users who need immediate clarity.",
