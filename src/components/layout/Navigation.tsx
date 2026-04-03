@@ -59,7 +59,9 @@ export function Navigation() {
             <div className="group relative flex items-center">
               <a
                 href={pathname === "/" ? "#work" : "/#work"}
-                className="font-medium text-brand-text hover:text-brand-accent transition-colors duration-200 py-2"
+                className={`font-medium transition-colors duration-200 py-2 ${
+                  pathname === "/" || pathname.startsWith("/portfolio") ? "text-brand-accent" : "text-brand-text hover:text-brand-accent"
+                }`}
               >
                 Portfolio
               </a>
@@ -71,7 +73,9 @@ export function Navigation() {
                       href={item.href}
                       className="px-1 py-1 hover:bg-black/5 rounded group/item transition-colors duration-150"
                     >
-                      <div className="font-semibold text-brand-text group-hover/item:text-brand-accent transition-colors duration-150 mb-1">
+                      <div className={`font-semibold transition-colors duration-150 mb-1 ${
+                        pathname === item.href ? "text-brand-accent" : "text-brand-text group-hover/item:text-brand-accent"
+                      }`}>
                         {item.name}
                       </div>
                       <div className="text-sm text-brand-text/60">
@@ -82,13 +86,28 @@ export function Navigation() {
                 </div>
               </div>
             </div>
-            <Link href="/about" className="font-medium text-brand-text hover:text-brand-accent transition-colors duration-200">
+            <Link 
+              href="/about" 
+              className={`font-medium transition-colors duration-200 ${
+                pathname.startsWith("/about") ? "text-brand-accent" : "text-brand-text hover:text-brand-accent"
+              }`}
+            >
               About
             </Link>
-            <Link href="/resume" className="font-medium text-brand-text hover:text-brand-accent transition-colors duration-200">
+            <Link 
+              href="/resume" 
+              className={`font-medium transition-colors duration-200 ${
+                pathname.startsWith("/resume") ? "text-brand-accent" : "text-brand-text hover:text-brand-accent"
+              }`}
+            >
               Resume
             </Link>
-            <Link href="/contact" className="font-medium text-brand-text hover:text-brand-accent transition-colors duration-200">
+            <Link 
+              href="/contact" 
+              className={`font-medium transition-colors duration-200 ${
+                pathname.startsWith("/contact") ? "text-brand-accent" : "text-brand-text hover:text-brand-accent"
+              }`}
+            >
               Contact
             </Link>
           </nav>
@@ -116,7 +135,9 @@ export function Navigation() {
       >
         <nav className="flex flex-col gap-8">
           <div>
-            <div className="text-sm font-semibold tracking-widest text-brand-text/50 uppercase mb-4">Portfolio</div>
+            <div className={`text-sm font-semibold tracking-widest uppercase mb-4 ${
+              pathname === "/" || pathname.startsWith("/portfolio") ? "text-brand-accent" : "text-brand-text/50"
+            }`}>Portfolio</div>
             <div className="flex flex-col gap-4 pl-4 border-l border-border-light">
               {PORTFOLIO_ITEMS.map((item) => (
                 <Link
@@ -125,7 +146,9 @@ export function Navigation() {
                   className="flex flex-col group/item"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  <span className="text-xl font-medium text-brand-text group-hover/item:text-brand-accent transition-colors duration-150">
+                  <span className={`text-xl font-medium transition-colors duration-150 ${
+                    pathname === item.href ? "text-brand-accent" : "text-brand-text group-hover/item:text-brand-accent"
+                  }`}>
                     {item.name}
                   </span>
                   <span className="text-sm text-brand-text/60 mt-0.5">
@@ -135,13 +158,13 @@ export function Navigation() {
               ))}
             </div>
           </div>
-          <Link href="/about" className="text-3xl font-semibold text-brand-text">
+          <Link href="/about" className={`text-3xl font-semibold ${pathname.startsWith("/about") ? "text-brand-accent" : "text-brand-text"}`}>
             About
           </Link>
-          <Link href="/resume" className="text-3xl font-semibold text-brand-text">
+          <Link href="/resume" className={`text-3xl font-semibold ${pathname.startsWith("/resume") ? "text-brand-accent" : "text-brand-text"}`}>
             Resume
           </Link>
-          <Link href="/contact" className="text-3xl font-semibold text-brand-text">
+          <Link href="/contact" className={`text-3xl font-semibold ${pathname.startsWith("/contact") ? "text-brand-accent" : "text-brand-text"}`}>
             Contact
           </Link>
         </nav>
