@@ -46,14 +46,24 @@ export default function AboutPage() {
               </ul>
             </div>
 
+            {/* Core Principles section */}
+            <h2 className="mb-6 text-2xl md:text-[32px] font-semibold text-brand-text">Core Principles</h2>
+            <ul className="list-outside list-disc pl-6 space-y-3 mb-12 text-[16px] leading-[24px] text-brand-text/75">
+              <li><strong className="text-brand-text font-semibold">Strategic Performance:</strong> I bridge the gap between business objectives and user needs, ensuring every feature is a deliberate choice that leads to a measurable outcome.</li>
+              <li><strong className="text-brand-text font-semibold">Retention through Visible Progress:</strong> I design products that make user effort legible, turning initial curiosity into the long-term commitment that drives lifetime value.</li>
+              <li><strong className="text-brand-text font-semibold">Calm Systems:</strong> In health and fitness, I build high-trust environments where the interface never becomes a barrier to the user&apos;s health goals.</li>
+            </ul>
+
             {/* What I Care About section */}
-            <h2 className="mb-6 text-2xl md:text-[32px] font-semibold text-brand-text">What I Care About</h2>
-            <p className="mb-10 text-[16px] leading-[24px] text-brand-text/75">
-              I focus on sports, fitness, and health because these products have the power to shape life-long habits. When they are designed well, they don&apos;t just provide information, they build confidence and long-term commitment. That is the kind of work I want to do.
-            </p>
+            <section className="w-full bg-brand-bg border border-border-light rounded-[16px] p-8 md:p-12 mb-12">
+              <h2 className="mb-6 text-2xl md:text-[32px] font-semibold text-brand-text">What I Care About</h2>
+              <p className="text-[16px] leading-[24px] text-brand-text/75">
+                I focus on sports, fitness, and health because these products have the power to shape life-long habits. When they are designed well, they don&apos;t just provide information, they build confidence and long-term commitment. That is the kind of work I want to do.
+              </p>
+            </section>
 
             {/* CTA */}
-            <div className="flex items-center gap-6 pt-10 border-t border-border-light w-full">
+            <div className="flex items-center gap-6 w-full">
               <Button href="/#work">Portfolio</Button>
               <div className="flex flex-col items-start">
                 <CopyEmail />
