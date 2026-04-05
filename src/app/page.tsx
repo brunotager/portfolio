@@ -148,9 +148,6 @@ export default function Home() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
                 />
               </div>
-              <p className="text-[13px] md:text-[14px] text-brand-text/50 font-medium tracking-wide">
-                Authored in Antigravity // Built with Next.js // Shipped via Vercel
-              </p>
             </div>
           </div>
           <div className="flex flex-col max-w-[600px] pt-0 md:pt-4">
@@ -189,6 +186,13 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="w-full py-8 text-center border-t border-border-light bg-brand-bg">
+        <p className="text-[13px] md:text-[14px] text-brand-text/50 font-medium tracking-wide">
+          Authored in Antigravity - Built with Next.js - Shipped via Vercel
+        </p>
+      </footer>
     </main>
   );
 }
