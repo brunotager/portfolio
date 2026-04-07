@@ -80,7 +80,7 @@ export default function Home() {
           Product Performance.
         </h1>
         <p className="text-[18px] md:text-[22px] font-normal leading-[28px] md:leading-[32px] text-brand-text/80 mb-8 max-w-2xl">
-          <span className="block md:inline">Designing the path from intention into action.</span>
+          <span className="block md:inline">Designing the path from intention to action.</span>
         </p>
         <div className="flex items-center gap-4 flex-col sm:flex-row">
           <Button href="#work">Portfolio</Button>
