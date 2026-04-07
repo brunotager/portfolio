@@ -2,16 +2,59 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-function VisualBlock({ src, alt, className = "my-4", contained = false }: { src?: string, alt: string, className?: string, contained?: boolean }) {
-  if (!src) return null;
+function VisualBlock({ src, alt, className = "my-4", contained = false }: { src?: string | string[], alt: string, className?: string, contained?: boolean }) {
+  if (!src || src.length === 0) return null;
   
+  if (Array.isArray(src)) {
+    return (
+      <div className={`w-full relative flex sm:items-stretch overflow-x-auto snap-x snap-mandatory gap-2 sm:gap-4 md:gap-6 lg:gap-8 pb-4 md:pb-0 ${className} [scrollbar-width:none] [&::-webkit-scrollbar]:hidden`}>
+        {src.flatMap((s, idx) => {
+          const imageClasses = contained 
+            ? "h-auto block w-full max-w-[280px] sm:max-w-[360px] md:max-w-[400px] lg:max-w-[450px] mx-auto my-6 rounded-[8px]" 
+            : "w-auto max-w-full h-auto max-h-[70vh] block mx-auto";
+            
+          const innerContainerClasses = contained
+            ? "w-full rounded-[16px] overflow-hidden relative bg-border-light/40 flex justify-center py-8 h-full"
+            : "w-full rounded-[16px] overflow-hidden relative flex justify-center h-full";
+
+          const imageNode = (
+            <div key={`img-${idx}`} className="shrink-0 w-fit max-w-[88vw] sm:max-w-none sm:w-auto sm:flex-1 snap-start">
+              <div className={innerContainerClasses}>
+                {s.endsWith('.mp4') ? (
+                  <video src={s} autoPlay loop muted playsInline className={imageClasses} />
+                ) : (
+                  <Image src={s} alt={`${alt} ${idx + 1}`} width={1600} height={900} className={imageClasses} unoptimized={s.endsWith('.gif')} />
+                )}
+              </div>
+            </div>
+          );
+
+          if (idx === 0 && src.length === 2) {
+            const arrowNode = (
+              <div key="arrow" className="shrink-0 flex items-center justify-center w-0 max-w-0 sm:max-w-[48px] sm:w-10 md:w-12 opacity-0 sm:opacity-100 overflow-hidden sm:overflow-visible pointer-events-none sm:pointer-events-auto">
+                <div className="text-brand-accent shrink-0 w-10 h-10 md:w-12 md:h-12 bg-brand-bg rounded-full flex items-center justify-center shadow-lg transform scale-50 sm:scale-100">
+                  <svg className="w-5 h-5 md:w-6 md:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
+              </div>
+            );
+            return [imageNode, arrowNode];
+          }
+
+          return [imageNode];
+        })}
+      </div>
+    );
+  }
+
   const imageClasses = contained 
     ? "h-auto block w-full max-w-[280px] sm:max-w-[360px] md:max-w-[400px] lg:max-w-[450px] mx-auto my-6 rounded-[8px]" 
-    : "w-auto max-w-full h-auto max-h-[70vh] block mx-auto";
+    : "w-full h-auto block rounded-[8px] md:rounded-[12px]";
     
   const containerClasses = contained
     ? `w-full rounded-[16px] overflow-hidden relative bg-border-light/40 flex justify-center py-8 ${className}`
-    : `w-fit mx-auto rounded-[16px] overflow-hidden relative flex justify-center ${className}`;
+    : `w-full rounded-[16px] overflow-hidden relative flex justify-center ${className}`;
 
   return (
     <div className={containerClasses}>
@@ -27,7 +70,7 @@ function VisualBlock({ src, alt, className = "my-4", contained = false }: { src?
 const CASE_STUDIES: Record<string, any> = {
   "codiris": {
     name: "Codiris",
-    visual_problem: "/images/codiris-visual-1.png",
+    visual_problem: "/images/codiris-visual-1.jpg",
     visual_iteration: "/images/codiris-visual-2.gif",
     visual_decisions_bottom: "/images/codiris-visual-3.mp4",
     visual_outcome: "/images/codiris-visual-4.mp4",
@@ -35,7 +78,7 @@ const CASE_STUDIES: Record<string, any> = {
     subtitle: "Restoring the Product Development Lifecycle",
     problem: {
       paragraphs: [
-        <>Product teams aren’t just under pressure. They are operating inside companies struggling to keep pace with constant change. While expectations for speed are rising, team structures are shrinking. When teams fail to adapt, the result is more than a missed deadline. It is <strong className="font-semibold text-brand-text">human layoffs</strong>.</>,
+        "Product teams aren’t just under pressure. They are operating inside companies struggling to keep pace with constant change. While expectations for speed are rising, team structures are shrinking. When teams fail to adapt, the result is more than a missed deadline. It is human layoffs.",
         "Inside this high-stakes environment, the product development process is broken. Instead of a cohesive flow, the system is defined by high-friction gaps:"
       ],
       list: [
@@ -59,9 +102,9 @@ const CASE_STUDIES: Record<string, any> = {
       constraintsPrompt: "Product Goals:",
       constraints: [
         "Design for high-efficiency product teams rather than solo builders.",
-        "Build a system to support the creative product development process instead of enforcing a single, rigid workflow.",
-        "Enable collaboration and permissions from day one.",
-        "Validate every design choice against its impact on speed and user goals."
+        "Build a system to support the creative product development process.",
+        "Enable collaboration and permissions.",
+        "Validate every design decision against its impact on speed and user goals."
       ]
     },
     insight: {
@@ -80,12 +123,12 @@ const CASE_STUDIES: Record<string, any> = {
     bet: {
       paragraphs: [
         "The solution isn't another tool. It's an integrated Product Development Environment (PDE).",
-        <span className="text-brand-text/80 font-normal">We bet that by maintaining context through the iteration process, we could eliminate the friction between development phases and prevent expensive hallucinations.</span>
+        <span className="text-brand-text/80 font-normal">The team and I bet that by maintaining context through the iteration process, we could eliminate the friction between development phases and prevent expensive hallucinations.</span>
       ]
     },
     iteration: {
       paragraphs: [
-        "Early versions of Codiris focused on structured phases and guided workflows. While this provided initial clarity, we found that it introduced unnecessary friction for high-efficiency product teams. We learned that too much structure actively blocks the creative product development process."
+        "Early versions of Codiris focused on structured phases and guided workflows. While this provided initial clarity, I found that it introduced unnecessary friction for high-efficiency product teams. I learned that too much structure actively blocks the creative product development process."
       ],
       prompt: "",
       list: [
@@ -99,16 +142,16 @@ const CASE_STUDIES: Record<string, any> = {
     },
     shift: {
       paragraphs: [
-        "The transition to v2 was not about adding more features. It was a fundamental change in how we approached system behavior. By watching how teams actually interacted with Codiris, we realized that the primary friction was not what they could do, but how they moved between phases.",
-        "We saw that users needed to jump between research, planning, design, and building instantly. This observation led us to replace the step-by-step flow with a tab-based architecture. This shift transformed Codiris from a sequence of pages into a non-linear environment. It allowed users to maintain multiple workstreams simultaneously, ensuring that they never had to choose between focus and context. It was no longer about following a path; it was about providing a workspace that matched the way builders actually think."
+        "The transition to v2 was not about adding more features. It was a fundamental change in how I approached system behavior. By watching how teams actually interacted with Codiris, I realized that the primary friction was not what they could do, but how they moved between phases.",
+        "I saw that users needed to jump between research, planning, design, and building instantly. This observation led me to replace the step-by-step flow with a tab-based architecture. This shift transformed Codiris from a sequence of pages into a non-linear environment. It allowed users to maintain multiple workstreams simultaneously, ensuring that they never had to choose between focus and context. It was no longer about following a path; it was about providing a workspace that matched the way builders actually think."
       ],
       list: []
     },
-    decisionsIntro: "Each of these decisions was made to reinforce continuity over friction. We prioritized flow and momentum at every level of the interface.",
+    decisionsIntro: "Each of these decisions was made to reinforce continuity over friction. I prioritized flow and momentum at every level of the interface.",
     decisions: [
       {
         feature: "Expandable phase tabs over hard navigation",
-        rationale: "We enabled users to move fluidly across the iteration process without losing context or triggering mental resets."
+        rationale: "I enabled users to move fluidly across the iteration process without losing context or triggering mental resets."
       },
       {
         feature: "Chat as a persistent system brain",
@@ -116,20 +159,20 @@ const CASE_STUDIES: Record<string, any> = {
       },
       {
         feature: "Productive waiting over idle loading",
-        rationale: "We transformed agent latency into active planning time, ensuring that technical processing never resulted in dead time for the user."
+        rationale: "I transformed agent latency into active planning time, ensuring that technical processing never resulted in dead time for the user."
       },
       {
         feature: "Task-based design planning",
-        rationale: "We replaced abstract page selection with concrete, editable implementation plans that bridged the gap between design and building."
+        rationale: "I replaced abstract page selection with concrete, editable implementation plans that bridged the gap between design and building."
       },
       {
         feature: "Embedded help over external documentation",
-        rationale: "By embedding Iris directly into the workspace, we ensured that questions were answered exactly where the work happened, not in separate tools."
+        rationale: "By embedding Iris directly into the workspace, I ensured that questions were answered exactly where the work happened, not in separate tools."
       }
     ],
     decisionsConclusion: "",
     outcome: {
-      intro: "Codiris moved from a rigid prototype into a functional environment for active iteration. By shifting to a tab-based PDE, we transformed the product from a series of disconnected steps into a unified system for building.",
+      intro: "Codiris moved from a rigid prototype into a functional environment for active iteration. By shifting to a tab-based PDE, I transformed the product from a series of disconnected steps into a unified system for building.",
       improvedLabel: "Performance Gains",
       improved: [
         <><strong className="font-semibold text-brand-text">Zero Context Loss.</strong> Users moved between phases without resets.</>,
@@ -155,8 +198,8 @@ const CASE_STUDIES: Record<string, any> = {
   "fit-and-fun": {
     name: "Fit & Fun",
     visual_problem: "/images/fit-and-fun-visual-1.png",
-    visual_shift: "/images/fit-and-fun-visual-2.png",
-    visual_decisions_title: "/images/fit-and-fun-visual-3.png",
+    visual_shift: ["/images/fit-and-fun-visual-2-v1.png", "/images/fit-and-fun-visual-2.png"],
+    visual_decisions_title: ["/images/fit-and-fun-visual-3-v1.png", "/images/fit-and-fun-visual-3.png"],
     visual_decisions_bottom: "/images/fit-and-fun-visual-4.gif",
     visual_outcome: "/images/fit-and-fun-demo.mp4",
     subhead: "Behavioral Design",
@@ -275,8 +318,8 @@ const CASE_STUDIES: Record<string, any> = {
   "cyclebot": {
     name: "CycleBot",
     visual_problem: "/images/cyclebot-visual-1.png",
-    visual_iteration: "/images/cyclebot-visual-2.png",
-    visual_decisions_title: "/images/cyclebot-visual-3.png",
+    visual_iteration: ["/images/cyclebot-visual-2-v1.png", "/images/cyclebot-visual-2.png"],
+    visual_decisions_title: ["/images/cyclebot-visual-3-v1.png", "/images/cyclebot-visual-3.png"],
     visual_outcome: "/images/cyclebot-demo.mp4",
     subhead: "Driving ROI",
     subtitle: "Optimizing the Path to High-Value Purchase",
@@ -325,8 +368,8 @@ const CASE_STUDIES: Record<string, any> = {
     },
     iteration: {
       paragraphs: [
-        "The first prototype leaned heavily on a questionnaire model. While it technically gathered data, testing revealed that it added cognitive load. Users felt they were filling out a form rather than receiving advice, and the AI's role was unclear.",
-        "I shifted the experience from answering questions to having a conversation. This change alone improved clarity and engagement. By making the interface responsive and dialogue-driven, the product moved from a data-collection tool to a decision-support system."
+        "The first iteration used an open conversational model where users could type anything. Testing revealed that this created high cognitive load. Without clear boundaries, users were unsure what information the expert needed to make a recommendation, which stalled momentum.",
+        "I shifted the experience into a structured specs picking process with four options per question. By narrowing the focus, the product moved from an ambiguous chat into a decisive system that builds the confidence required for a high-value purchase."
       ],
       prompt: "",
       list: [],
@@ -346,16 +389,12 @@ const CASE_STUDIES: Record<string, any> = {
     decisionsIntro: "",
     decisions: [
       {
-        feature: "Conversational AI over static forms",
-        rationale: "I presented Cyclebot as a named AI expert to set clear expectations and move away from the \"survey\" feel."
-      },
-      {
-        feature: "Progressive disclosure of interactive features",
-        rationale: "Advanced options like camera measurements were introduced only when they became relevant to the user."
-      },
-      {
         feature: "Transparent recommendation logic",
         rationale: "I made sure users could see why a bike was suggested by integrating customer reviews and linking features to their specific needs."
+      },
+      {
+        feature: "Structured Choice over Open Dialogue",
+        rationale: "I replaced the open-text input with a four-option specs picking process. This removed the friction of the blank slate and accelerated the journey toward a confident purchase decision."
       },
       {
         feature: "Guest checkout as the default",
@@ -364,6 +403,10 @@ const CASE_STUDIES: Record<string, any> = {
       {
         feature: "Data-driven iteration",
         rationale: "I used prioritized problem logs from every user test to make sure each design update solved a specific friction point."
+      },
+      {
+        feature: "Progressive disclosure of interactive features",
+        rationale: "Advanced options like camera measurements were introduced only when they became relevant to the user."
       }
     ],
     decisionsConclusion: "",
@@ -539,7 +582,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
           <h2 className="mb-6 text-[21px] max-[390px]:text-[19px] sm:text-2xl md:text-[32px] tracking-tight sm:tracking-normal whitespace-nowrap font-semibold text-brand-text">The Problem</h2>
 
           {/* Visual Container: Problem */}
-          <VisualBlock contained={data.contained_visuals?.includes('visual_problem')} src={data.visual_problem} alt={`${data.name} problem visual`} className={`mb-8 ${data.name === 'CycleBot' ? '!border-[3px] !border-[#222222]' : ''}`} />
+          <VisualBlock contained={data.contained_visuals?.includes('visual_problem')} src={data.visual_problem} alt={`${data.name} problem visual`} className="mb-8" />
 
           <div className="text-[16px] leading-[24px] text-brand-text/80 flex flex-col gap-4">
             {data.problem.paragraphs?.map((p: any, i: number) => <p key={i}>{p}</p>)}

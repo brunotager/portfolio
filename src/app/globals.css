@@ -15,7 +15,7 @@
   --color-border-light: #E8E6E1;
   --color-border-dark: #E2DFD8;
   --color-border-nav: #EAE8E3;
-  
+
   --font-sans: 'General Sans', system-ui, sans-serif;
   --radius-md: 8px;
 }
@@ -29,9 +29,11 @@
   h1 {
     @apply text-[64px] font-bold leading-[72px] tracking-[-0.5px];
   }
+
   h2 {
     @apply text-[32px] font-semibold leading-[40px];
   }
+
   h3 {
     @apply text-[24px] font-semibold leading-[32px];
   }
@@ -41,9 +43,11 @@
     h1 {
       @apply text-[40px] leading-[48px];
     }
+
     h2 {
       @apply text-[24px] leading-[32px];
     }
+
     h3 {
       @apply text-[20px] leading-[26px];
     }

@@ -40,9 +40,9 @@ export default function AboutPage() {
                 I’ve navigated three careers to reach this point, each one adding a layer to how I build products today:
               </p>
               <ul className="list-outside list-disc pl-6 space-y-3">
+                <li><strong className="text-brand-text font-semibold">Product Development (2+ years):</strong> I move quickly from user insight to a shipped product, working as a strategic partner to engineering to ensure the final result is as functional as it is thoughtful.</li>
                 <li><strong className="text-brand-text font-semibold">Strategic Communications (6 years):</strong> At firms like the Walker Marchant Group, I learned that clarity is a requirement, not a preference. If a message is cluttered, people don&apos;t act.</li>
                 <li><strong className="text-brand-text font-semibold">Operations &amp; Hospitality (8 years):</strong> Running businesses like Politics &amp; Prose and Honeys taught me that trust is built in the details. I design products that respect the user&apos;s time and build the loyalty required for them to return.</li>
-                <li><strong className="text-brand-text font-semibold">Product Development (2+ years):</strong> I move quickly from user insight to a shipped product, working as a strategic partner to engineering to ensure the final result is as functional as it is thoughtful.</li>
               </ul>
             </div>
 

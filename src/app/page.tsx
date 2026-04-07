@@ -9,7 +9,7 @@ import { CopyEmail } from "@/components/ui/CopyEmail";
 const PORTFOLIO_ITEMS = [
   {
     title: "Codiris",
-    summary: <>Eliminated the continuity gap in AI workflows by <strong>creating a unified system</strong> that preserves context and prevents mental resets.</>,
+    summary: <>Scaled a 0 to 1 AI environment by identifying a systemic industry problem and <strong>using data-driven research</strong> to iterate the product from v1 to v2.</>,
     href: "/portfolio/codiris",
     imageSrc: "/images/codiris-homepage.png",
     imageBgColor: "transparent",
@@ -80,8 +80,7 @@ export default function Home() {
           Product Performance.
         </h1>
         <p className="text-[18px] md:text-[22px] font-normal leading-[28px] md:leading-[32px] text-brand-text/80 mb-8 max-w-2xl">
-          <span className="block md:inline">Designing for Results. </span>
-          <span className="block md:inline">Eliminating Friction.</span>
+          <span className="block md:inline">Designing the path from intention into action.</span>
         </p>
         <div className="flex items-center gap-4 flex-col sm:flex-row">
           <Button href="#work">Portfolio</Button>
@@ -110,7 +109,7 @@ export default function Home() {
             <span className="block md:inline">Sixteen Years of Results.</span>
           </h2>
           <p className="text-[18px] md:text-[20px] leading-[28px] md:leading-[30px] text-brand-text/80">
-            These case studies are selected benchmarks from three careers spent turning complex friction into customer satisfaction. From managing Fortune 500 communications to creating high-impact systems, I focus on the decisions that delight the customer and drive the business forward.
+            These case studies are a selection of work from 16 years dedicated to removing the friction between user intention and user action. From leading Fortune 500 communications to building an AI startup, I iterate through research, design, and testing to identify the solutions that empower the user and improve the bottom line.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
@@ -156,14 +155,13 @@ export default function Home() {
             </p>
             
             <div className="text-[16px] leading-[24px] text-brand-text/75 flex flex-col">
-              <h3 className="text-[20px] font-semibold text-brand-text mb-3">Three Careers. One Goal.</h3>
               <p className="mb-4">
                 I’ve built my career across three distinct industries, all centered on one thing: <strong>understanding how people move from intention to action.</strong>
               </p>
               <ul className="list-outside list-disc pl-6 space-y-3 mb-10 text-[16px] leading-[24px] text-brand-text/80">
+                <li><span className="font-semibold text-brand-text">Product Development (2+ years):</span> I treat design as a practice of continuous iteration; refining every detail until the system satisfies the customer.</li>
                 <li><span className="font-semibold text-brand-text">Strategic Communications (6 years):</span> Managed communications for Fortune 500 clients, learning how to shape perception and move large audiences toward a specific goal without losing clarity.</li>
                 <li><span className="font-semibold text-brand-text">Operations &amp; Hospitality (8 years):</span> Built and scaled new business concepts from the ground up, focusing on how small, consistent details build the trust required to build customer loyalty.</li>
-                <li><span className="font-semibold text-brand-text">Product Development (2+ years):</span> I treat design as a practice of continuous iteration; refining every detail until the system satisfies the customer.</li>
               </ul>
               
               <h3 className="text-[20px] font-semibold text-brand-text mb-4">Core Principles</h3>
@@ -188,10 +186,14 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="w-full py-8 text-center border-t border-border-light bg-brand-bg">
-        <p className="text-[13px] md:text-[14px] text-brand-text/50 font-medium tracking-wide">
-          Authored in Antigravity - Built with Next.js - Shipped via Vercel
-        </p>
+      <footer className="w-full py-8 border-t border-border-light bg-brand-bg flex justify-center items-center px-6">
+        <div className="flex flex-wrap items-center justify-center gap-x-3 md:gap-x-4 gap-y-2 text-[13px] md:text-[14px] text-brand-text/50 font-medium tracking-wide text-center">
+          <span>Authored in Antigravity</span>
+          <span className="w-1.5 h-1.5 rounded-full bg-brand-accent/65 shrink-0"></span>
+          <span>Built with Next.js</span>
+          <span className="w-1.5 h-1.5 rounded-full bg-brand-accent/65 shrink-0"></span>
+          <span>Shipped via Vercel</span>
+        </div>
       </footer>
     </main>
   );

@@ -130,7 +130,7 @@ export default function ResumePage() {
              <h3 className="text-sm font-semibold text-brand-text/50 uppercase tracking-widest mb-4">Languages</h3>
              <div className="flex flex-wrap gap-2">
                 {[
-                  "English (Fluent)", "French (Fluent)", "Spanish (Limited)", "Arabic (Elementary)"
+                  "English (Bi-lingual)", "French (Bi-lingual)", "Spanish (Conversational)", "Arabic (Conversational)"
                 ].map(lang => (
                   <span key={lang} className="px-3 py-1.5 bg-border-light text-[14px] text-brand-text rounded-md border border-border-dark whitespace-nowrap">
                     {lang}
