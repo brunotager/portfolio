@@ -7,7 +7,7 @@ function VisualBlock({ src, alt, className = "my-4", contained = false }: { src?
   
   if (Array.isArray(src)) {
     return (
-      <div className={`w-full relative flex sm:items-stretch overflow-x-auto snap-x snap-mandatory gap-2 sm:gap-4 md:gap-6 lg:gap-8 pb-4 md:pb-0 ${className} [scrollbar-width:none] [&::-webkit-scrollbar]:hidden`}>
+      <div className={`w-full relative flex justify-start sm:items-stretch overflow-x-auto snap-x snap-mandatory gap-2 sm:gap-4 md:gap-6 lg:gap-8 pb-4 md:pb-0 ${className} [scrollbar-width:none] [&::-webkit-scrollbar]:hidden`}>
         {src.flatMap((s, idx) => {
           const imageClasses = contained 
             ? "h-auto block w-full max-w-[280px] sm:max-w-[360px] md:max-w-[400px] lg:max-w-[450px] mx-auto my-6 rounded-[8px]" 
@@ -18,7 +18,7 @@ function VisualBlock({ src, alt, className = "my-4", contained = false }: { src?
             : "w-full rounded-[16px] overflow-hidden relative flex justify-center h-full";
 
           const imageNode = (
-            <div key={`img-${idx}`} className="shrink-0 w-fit max-w-[88vw] sm:max-w-none sm:w-auto sm:flex-1 snap-start">
+            <div key={`img-${idx}`} className="shrink-0 w-[88vw] sm:max-w-none sm:w-auto sm:flex-1 snap-start">
               <div className={innerContainerClasses}>
                 {s.endsWith('.mp4') ? (
                   <video src={s} autoPlay loop muted playsInline className={imageClasses} />
