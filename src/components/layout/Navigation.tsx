@@ -119,9 +119,9 @@ export function Navigation() {
             aria-label="Toggle Menu"
           >
             <div className="w-6 h-5 relative flex flex-col justify-between">
-              <span className={`w-full h-[2px] bg-brand-text transition-transform duration-200 origin-left ${mobileMenuOpen ? "rotate-45" : ""}`} />
-              <span className={`w-full h-[2px] bg-brand-text transition-opacity duration-200 ${mobileMenuOpen ? "opacity-0" : "opacity-100"}`} />
-              <span className={`w-full h-[2px] bg-brand-text transition-transform duration-200 origin-left ${mobileMenuOpen ? "-rotate-45" : ""}`} />
+              <span className={`w-full h-[2px] bg-brand-text transition-all duration-300 ${mobileMenuOpen ? "rotate-45 translate-y-[9px]" : ""}`} />
+              <span className={`w-full h-[2px] bg-brand-text transition-all duration-300 ${mobileMenuOpen ? "opacity-0 translate-x-1" : "opacity-100"}`} />
+              <span className={`w-full h-[2px] bg-brand-text transition-all duration-300 ${mobileMenuOpen ? "-rotate-45 -translate-y-[9px]" : ""}`} />
             </div>
           </button>
         </div>
