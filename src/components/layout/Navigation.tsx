@@ -14,11 +14,27 @@ const PORTFOLIO_ITEMS = [
 export function Navigation() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
   const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 60);
+
+      if (window.location.pathname === "/") {
+        const workSection = document.getElementById('work');
+        const aboutSection = document.getElementById('about');
+
+        let current = "";
+        if (aboutSection && aboutSection.getBoundingClientRect().top <= 150) {
+          current = "about";
+        } else if (workSection && workSection.getBoundingClientRect().top <= 150) {
+          current = "work";
+        }
+        setActiveSection(current);
+      } else {
+        setActiveSection("");
+      }
     };
     
     // Run it once on mount to catch the initial position
@@ -60,7 +76,7 @@ export function Navigation() {
               <a
                 href={pathname === "/" ? "#work" : "/#work"}
                 className={`font-medium transition-colors duration-200 py-2 ${
-                  pathname === "/" || pathname.startsWith("/portfolio") ? "text-brand-accent" : "text-brand-text hover:text-brand-accent"
+                  pathname.startsWith("/portfolio") || activeSection === "work" ? "text-brand-accent" : "text-brand-text hover:text-brand-accent"
                 }`}
               >
                 Case Studies
@@ -89,7 +105,7 @@ export function Navigation() {
             <Link 
               href="/about" 
               className={`font-medium transition-colors duration-200 ${
-                pathname.startsWith("/about") ? "text-brand-accent" : "text-brand-text hover:text-brand-accent"
+                pathname.startsWith("/about") || activeSection === "about" ? "text-brand-accent" : "text-brand-text hover:text-brand-accent"
               }`}
             >
               About
@@ -136,7 +152,7 @@ export function Navigation() {
         <nav className="flex flex-col gap-8">
           <div>
             <div className={`text-sm font-semibold tracking-widest uppercase mb-4 ${
-              pathname === "/" || pathname.startsWith("/portfolio") ? "text-brand-accent" : "text-brand-text/50"
+              pathname.startsWith("/portfolio") || activeSection === "work" ? "text-brand-accent" : "text-brand-text/50"
             }`}>Case Studies</div>
             <div className="flex flex-col gap-4 pl-4 border-l border-border-light">
               {PORTFOLIO_ITEMS.map((item) => (
@@ -158,7 +174,7 @@ export function Navigation() {
               ))}
             </div>
           </div>
-          <Link href="/about" className={`text-3xl font-semibold ${pathname.startsWith("/about") ? "text-brand-accent" : "text-brand-text"}`}>
+          <Link href="/about" className={`text-3xl font-semibold ${pathname.startsWith("/about") || activeSection === "about" ? "text-brand-accent" : "text-brand-text"}`}>
             About
           </Link>
           <Link href="/resume" className={`text-3xl font-semibold ${pathname.startsWith("/resume") ? "text-brand-accent" : "text-brand-text"}`}>
