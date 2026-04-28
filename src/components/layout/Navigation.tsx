@@ -63,7 +63,7 @@ export function Navigation() {
                   pathname === "/" || pathname.startsWith("/portfolio") ? "text-brand-accent" : "text-brand-text hover:text-brand-accent"
                 }`}
               >
-                Portfolio
+                Case Studies
               </a>
               <div className="absolute top-full left-0 pt-4 -mt-2 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-200 w-64">
                 <div className="bg-brand-bg border border-border-light rounded-md p-2 flex flex-col gap-4">
@@ -137,7 +137,7 @@ export function Navigation() {
           <div>
             <div className={`text-sm font-semibold tracking-widest uppercase mb-4 ${
               pathname === "/" || pathname.startsWith("/portfolio") ? "text-brand-accent" : "text-brand-text/50"
-            }`}>Portfolio</div>
+            }`}>Case Studies</div>
             <div className="flex flex-col gap-4 pl-4 border-l border-border-light">
               {PORTFOLIO_ITEMS.map((item) => (
                 <Link

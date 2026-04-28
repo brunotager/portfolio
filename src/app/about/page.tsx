@@ -6,15 +6,7 @@ import { CopyEmail } from "@/components/ui/CopyEmail";
 export default function AboutPage() {
   return (
     <main className="flex flex-col">
-      <section className="relative px-6 md:px-12 pt-16 md:pt-24 pb-32 max-w-6xl mx-auto w-full flex flex-col justify-start">
-        
-        {/* Intro Header */}
-        <div className="mb-8 md:mb-12">
-          <p className="text-[18px] md:text-[22px] font-normal leading-[28px] md:leading-[32px] text-brand-text/80 max-w-2xl">
-            Product designer focused on sports, fitness, and behavior
-          </p>
-        </div>
-
+      <section className="relative px-6 md:px-12 pt-32 pb-24 max-w-6xl mx-auto w-full flex flex-col justify-start">
         {/* Content Section */}
         <div className="flex flex-col max-w-3xl w-full">
             
@@ -40,9 +32,9 @@ export default function AboutPage() {
                 I’ve navigated three careers to reach this point, each one adding a layer to how I build products today:
               </p>
               <ul className="list-outside list-disc pl-6 space-y-3">
-                <li><strong className="text-brand-text font-semibold">Product Development (2+ years):</strong> I move quickly from user insight to a shipped product, working as a strategic partner to engineering to ensure the final result is as functional as it is thoughtful.</li>
-                <li><strong className="text-brand-text font-semibold">Strategic Communications (6 years):</strong> At firms like the Walker Marchant Group, I learned that clarity is a requirement, not a preference. If a message is cluttered, people don&apos;t act.</li>
-                <li><strong className="text-brand-text font-semibold">Operations &amp; Hospitality (8 years):</strong> Running businesses like Politics &amp; Prose and Honeys taught me that trust is built in the details. I design products that respect the user&apos;s time and build the loyalty required for them to return.</li>
+                <li><strong className="text-brand-text font-semibold">Product Development:</strong> I move quickly from user insight to a shipped product, working as a strategic partner to engineering to ensure the final result is as functional as it is thoughtful.</li>
+                <li><strong className="text-brand-text font-semibold">Strategic Communications:</strong> At firms like the Walker Marchant Group, I learned that clarity is a requirement, not a preference. If a message is cluttered, people don&apos;t act.</li>
+                <li><strong className="text-brand-text font-semibold">Operations &amp; Hospitality:</strong> Running businesses like Politics &amp; Prose and Honeys taught me that trust is built in the details. I design products that respect the user&apos;s time and build the loyalty required for them to return.</li>
               </ul>
             </div>
 
@@ -64,7 +56,7 @@ export default function AboutPage() {
 
             {/* CTA */}
             <div className="flex items-center gap-6 w-full">
-              <Button href="/#work">Portfolio</Button>
+              <Button href="/#work">Case Studies</Button>
               <div className="flex flex-col items-start">
                 <CopyEmail />
                 <p className="text-brand-text/50 font-medium text-[13px] mt-2">

@@ -8,28 +8,28 @@ import { CopyEmail } from "@/components/ui/CopyEmail";
 
 const PORTFOLIO_ITEMS = [
   {
-    title: "Codiris",
+    title: "Codiris: Systems Architecture",
     summary: <>Scaled a 0 to 1 AI environment by identifying a systemic industry problem and <strong>using data-driven research</strong> to iterate the product from v1 to v2.</>,
     href: "/portfolio/codiris",
     imageSrc: "/images/codiris-homepage.png",
     imageBgColor: "transparent",
   },
   {
-    title: "Fit & Fun",
+    title: "Fit & Fun: Behavioral Design",
     summary: <>Drove fitness consistency by engineering a low-friction habit loop that rewards effort and builds <strong>visible, immediate momentum.</strong></>,
     href: "/portfolio/fit-and-fun",
     imageSrc: "/images/fit-and-fun-homepage.png",
     imageBgColor: "#F7F6F3",
   },
   {
-    title: "CycleBot",
+    title: "Cyclebot: Driving ROI",
     summary: <>Solved a <strong>70% abandonment rate</strong> by replacing user hesitation with a decisive AI agent that builds buying confidence.</>,
     href: "/portfolio/cyclebot",
     imageSrc: "/images/cyclebot-homepage.png",
     imageBgColor: "#F7F6F3",
   },
   {
-    title: "CCTA",
+    title: "CCTA: High-Trust UX",
     summary: <>Lowered the barrier to mental health care by transforming a cluttered interface into a <strong>calm, goal-oriented experience.</strong></>,
     href: "/portfolio/ccta",
     imageSrc: "/images/ccta-homepage.png",
@@ -83,7 +83,7 @@ export default function Home() {
           <span className="block md:inline">Designing the path from intention to action.</span>
         </p>
         <div className="flex items-center gap-4 flex-col sm:flex-row">
-          <Button href="#work">Portfolio</Button>
+          <Button href="#work">Case Studies</Button>
           <Button href="#about" variant="outline">About</Button>
         </div>
 
@@ -159,9 +159,9 @@ export default function Home() {
                 I’ve built my career across three distinct industries, all centered on one thing: <strong>understanding how people move from intention to action.</strong>
               </p>
               <ul className="list-outside list-disc pl-6 space-y-3 mb-10 text-[16px] leading-[24px] text-brand-text/80">
-                <li><span className="font-semibold text-brand-text">Product Development (2+ years):</span> I treat design as a practice of continuous iteration; refining every detail until the system satisfies the customer.</li>
-                <li><span className="font-semibold text-brand-text">Strategic Communications (6 years):</span> Managed communications for Fortune 500 clients, learning how to shape perception and move large audiences toward a specific goal without losing clarity.</li>
-                <li><span className="font-semibold text-brand-text">Operations &amp; Hospitality (8 years):</span> Built and scaled new business concepts from the ground up, focusing on how small, consistent details build the trust required to build customer loyalty.</li>
+                <li><span className="font-semibold text-brand-text">Product Development:</span> I treat design as a practice of continuous iteration; refining every detail until the system satisfies the customer.</li>
+                <li><span className="font-semibold text-brand-text">Strategic Communications:</span> Managed communications for Fortune 500 clients, learning how to shape perception and move large audiences toward a specific goal without losing clarity.</li>
+                <li><span className="font-semibold text-brand-text">Operations &amp; Hospitality:</span> Built and scaled new business concepts from the ground up, focusing on how small, consistent details build the trust required to build customer loyalty.</li>
               </ul>
               
               <h3 className="text-[20px] font-semibold text-brand-text mb-4">Core Principles</h3>

@@ -78,7 +78,7 @@ export function VisualBlock({ src, alt, className = "my-4", contained = false }:
 
   const imageClasses = contained 
     ? "h-auto block w-full max-w-[280px] sm:max-w-[360px] md:max-w-[400px] lg:max-w-[450px] mx-auto my-6 rounded-[8px]" 
-    : "w-full h-auto block rounded-[8px] md:rounded-[12px]";
+    : "w-full md:w-auto md:max-w-full h-auto md:max-h-[80vh] block mx-auto rounded-[8px] md:rounded-[12px]";
     
   const containerClasses = contained
     ? `w-full rounded-[16px] overflow-hidden relative bg-border-light/40 flex justify-center py-8 ${className}`
