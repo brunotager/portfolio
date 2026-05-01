@@ -10,7 +10,7 @@ export default function ContactPage() {
       </h1>
       
       <p className="text-[18px] md:text-[22px] font-normal leading-[28px] md:leading-[32px] text-brand-text/80 mx-auto max-w-full mb-16 whitespace-nowrap">
-        If you&apos;re hiring a product designer for sports, fitness, or health, I&apos;ll make this easy.
+        If you&apos;re hiring a product designer, I&apos;ll make this easy.
       </p>
 
       <div className="flex flex-col items-center w-full max-w-sm mx-auto">
