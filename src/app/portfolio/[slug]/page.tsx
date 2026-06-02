@@ -151,7 +151,7 @@ const CASE_STUDIES: Record<string, any> = {
     context: {
       items: [
         { label: "Role", value: "Product Designer" },
-        { label: "Context", value: <>Mobile Health<br />Concept</> },
+        { label: "Context", value: "Mobile Fitness" },
         { label: "Platform", value: "Mobile App" },
         { label: "Key Focus", value: "Behavioral Design & Gamification" }
       ],
@@ -274,7 +274,7 @@ const CASE_STUDIES: Record<string, any> = {
     context: {
       items: [
         { label: "Role", value: "Product Designer" },
-        { label: "Context", value: <>Fitness Tech<br />Concept</> },
+        { label: "Context", value: "AI for e-Commerce" },
         { label: "Platform", value: "Mobile Web" },
         { label: "Key Focus", value: "Driving ROI & E-Commerce Design" }
       ],

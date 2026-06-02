@@ -42,7 +42,7 @@ export default function Home() {
 
   useEffect(() => {
     let scrollTimeout: NodeJS.Timeout;
-    
+
     const handleScroll = () => {
       // Clear hash if scrolled to top
       if (window.scrollY < 50 && window.location.hash) {
@@ -89,13 +89,12 @@ export default function Home() {
 
         {/* Fading Arrow */}
         <div
-          className={`absolute bottom-12 transition-opacity duration-500 ease-in-out ${
-            showArrow ? "opacity-100" : "opacity-0 pointer-events-none"
-          }`}
+          className={`absolute bottom-12 transition-opacity duration-500 ease-in-out ${showArrow ? "opacity-100" : "opacity-0 pointer-events-none"
+            }`}
         >
           <div className="text-brand-accent animate-pulse">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M12 5v14M19 12l-7 7-7-7"/>
+              <path d="M12 5v14M19 12l-7 7-7-7" />
             </svg>
           </div>
         </div>
@@ -151,9 +150,9 @@ export default function Home() {
           </div>
           <div className="flex flex-col max-w-[600px] pt-0 md:pt-4">
             <p className="mb-6 text-[18px] leading-[28px] text-brand-text font-medium">
-              Whether it’s a fitness app or a complex AI workflow, my goal is the same: I remove the friction between a user’s intention and their end goal.
+              Whether it's a consumer mobile app or a complex AI workflow, my goal is the same: I remove the friction between a user's intention and their end goal.
             </p>
-            
+
             <div className="text-[16px] leading-[24px] text-brand-text/75 flex flex-col">
               <p className="mb-4">
                 I’ve built my career across three distinct industries, all centered on one thing: <strong>understanding how people move from intention to action.</strong>
@@ -163,15 +162,15 @@ export default function Home() {
                 <li><span className="font-semibold text-brand-text">Strategic Communications:</span> Managed communications for Fortune 500 clients, learning how to shape perception and move large audiences toward a specific goal without losing clarity.</li>
                 <li><span className="font-semibold text-brand-text">Operations &amp; Hospitality:</span> Built and scaled new business concepts from the ground up, focusing on how small, consistent details build the trust required to build customer loyalty.</li>
               </ul>
-              
+
               <h3 className="text-[20px] font-semibold text-brand-text mb-4">Core Principles</h3>
               <ul className="list-outside list-disc pl-6 space-y-3 mb-4 text-[16px] leading-[24px] text-brand-text/80">
                 <li><span className="font-semibold text-brand-text">Strategic Performance:</span> I bridge the gap between business objectives and user needs, ensuring every feature is a deliberate choice that leads to a measurable outcome.</li>
                 <li><span className="font-semibold text-brand-text">Retention through Visible Progress:</span> I design products that make user effort legible, turning initial curiosity into the long-term commitment that drives lifetime value.</li>
-                <li><span className="font-semibold text-brand-text">Calm Systems:</span> In health and fitness, I build high-trust environments where the interface never becomes a barrier to the user’s health goals.</li>
+                <li><span className="font-semibold text-brand-text">Calm Systems:</span> I build high-trust environments where the interface never becomes a barrier to the user's goals.</li>
               </ul>
             </div>
-            
+
             <div className="flex items-center gap-6 mt-10">
               <Button href="/about">Read More</Button>
               <div className="flex flex-col items-start">

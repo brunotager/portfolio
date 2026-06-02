@@ -16,7 +16,7 @@ export default function AboutPage() {
               <span className="block md:inline">Eliminating Friction.</span>
             </h2>
             <p className="mb-12 text-[18px] leading-[28px] text-brand-text font-medium">
-              Whether it’s a fitness app or a complex AI workflow, my goal is the same: I remove the friction between a user’s intention and their end goal.
+              Whether it’s a consumer mobile app or a complex AI workflow, my goal is the same: I remove the friction between a user’s intention and their end goal.
             </p>
 
             {/* The Athlete Mindset section */}
@@ -43,14 +43,14 @@ export default function AboutPage() {
             <ul className="list-outside list-disc pl-6 space-y-3 mb-12 text-[16px] leading-[24px] text-brand-text/75">
               <li><strong className="text-brand-text font-semibold">Strategic Performance:</strong> I bridge the gap between business objectives and user needs, ensuring every feature is a deliberate choice that leads to a measurable outcome.</li>
               <li><strong className="text-brand-text font-semibold">Retention through Visible Progress:</strong> I design products that make user effort legible, turning initial curiosity into the long-term commitment that drives lifetime value.</li>
-              <li><strong className="text-brand-text font-semibold">Calm Systems:</strong> In health and fitness, I build high-trust environments where the interface never becomes a barrier to the user&apos;s health goals.</li>
+              <li><strong className="text-brand-text font-semibold">Calm Systems:</strong> I build high-trust environments where the interface never becomes a barrier to the user&apos;s goals.</li>
             </ul>
 
             {/* What I Care About section */}
             <section className="w-full bg-brand-bg border border-border-light rounded-[16px] p-8 md:p-12 mb-12">
               <h2 className="mb-6 text-2xl md:text-[32px] font-semibold text-brand-text">What I Care About</h2>
               <p className="text-[16px] leading-[24px] text-brand-text/75">
-                I focus on sports, fitness, and health because these products have the power to shape life-long habits. When they are designed well, they don&apos;t just provide information, they build confidence and long-term commitment. That is the kind of work I want to do.
+                I focus on products that change people&apos;s lives. I&apos;ve always believed that you get back what you put into this world. That&apos;s why I hold myself to the same standard I&apos;d want from the people building the products I rely on.
               </p>
             </section>
 
