@@ -13,7 +13,7 @@ export default function ResumePage() {
           <div className="mb-12">
             <h1 className="text-4xl md:text-[48px] font-bold text-brand-text mb-6">Bruno Tager</h1>
             <p className="text-[16px] leading-[26px] text-brand-text/80">
-              I&apos;m an AI-native UX/UI designer with 16 years of experience spread across three careers: strategic communications, operations, and product. Each one taught me a different way to ask the same question: where does the user get stuck, and how do I fix it? I&apos;ve applied that mindset to Fortune 500 brands, a B2B SaaS product I co-founded, a Section 508-compliant government platform, and my own consulting practice. This resume is a summary of those three careers; my <a href="https://www.linkedin.com/in/brunotager" target="_blank" className="text-brand-accent hover:underline">LinkedIn</a> has the full story.
+              I&apos;m an AI-native UX/UI designer with 16 years of experience spread across three careers: strategic communications, operations, and product. Each one taught me a different way to ask: where does the user get stuck, and how do I fix it? I&apos;ve applied that mindset to Fortune 500 brands, a B2B SaaS product I co-founded, a Section 508-compliant government platform, and my own consulting practice. This resume is a summary of those three careers; my <a href="https://www.linkedin.com/in/brunotager" target="_blank" className="text-brand-accent hover:underline">LinkedIn</a> has the full story.
             </p>
           </div>
 
@@ -24,18 +24,7 @@ export default function ResumePage() {
             <div className="flex flex-col gap-10">
               {/* Job 1 */}
               <div>
-                <h3 className="text-[20px] font-semibold text-brand-text mb-1">Codiris | Co-Founder &amp; Product Designer (2025 - 2026)</h3>
-                <div className="text-[14px] font-medium text-brand-text/50 uppercase tracking-wider mb-4">AI-Native Product, Agent-Driven Design, and 0→1</div>
-                <ul className="flex flex-col gap-3 text-[16px] leading-[24px] text-brand-text/80">
-                  <li className="flex gap-3 items-start group"><span className="text-brand-accent mt-0.5">→</span><span><strong className="font-semibold text-brand-text group-hover:text-brand-accent transition-colors">Systems Design:</strong> Designed an <strong className="font-semibold text-brand-text group-hover:text-brand-accent transition-colors">AI-native environment</strong> for product teams, orchestrating specialized agents from brainstorm to shipped product. Every agent downstream carries the <strong className="font-semibold text-brand-text group-hover:text-brand-accent transition-colors">full context</strong> of every decision that came before it.</span></li>
-                  <li className="flex gap-3 items-start group"><span className="text-brand-accent mt-0.5">→</span><span><strong className="font-semibold text-brand-text group-hover:text-brand-accent transition-colors">Data-Driven Iteration:</strong> Conducted user interviews and usability testing on v1, discovering that no users followed a linear workflow, leading to a full <strong className="font-semibold text-brand-text group-hover:text-brand-accent transition-colors">information architecture overhaul</strong> and a <strong className="font-semibold text-brand-text group-hover:text-brand-accent transition-colors">tab-based v2</strong> that significantly improved user experience and repeat engagement.</span></li>
-                  <li className="flex gap-3 items-start group"><span className="text-brand-accent mt-0.5">→</span><span><strong className="font-semibold text-brand-text group-hover:text-brand-accent transition-colors">Agile Collaboration:</strong> Worked within an Agile/Scrum framework alongside a PM and two engineers across <strong className="font-semibold text-brand-text group-hover:text-brand-accent transition-colors">Washington DC, San Francisco, and Paris</strong>, coordinating across time zones and languages to ship a complex, AI-native product from 0 to 1.</span></li>
-                </ul>
-              </div>
-
-              {/* Job 2 */}
-              <div>
-                <h3 className="text-[20px] font-semibold text-brand-text mb-1">Tager Consulting | Principal Designer (2024 - 2025)</h3>
+                <h3 className="text-[20px] font-semibold text-brand-text mb-1">Tager Consulting | Principal Designer (03/2024 – present)</h3>
                 <div className="text-[14px] font-medium text-brand-text/50 uppercase tracking-wider mb-4">Strategic Design, Research-Based Decision Making, and Multi-Platform Products</div>
                 <ul className="flex flex-col gap-3 text-[16px] leading-[24px] text-brand-text/80">
                   <li className="flex gap-3 items-start group"><span className="text-brand-accent mt-0.5">→</span><span><strong className="font-semibold text-brand-text group-hover:text-brand-accent transition-colors">HCD &amp; Digital Redesign:</strong> Applied Human-Centered Design to reorganize a mental health clinic&apos;s <strong className="font-semibold text-brand-text group-hover:text-brand-accent transition-colors">patient intake experience</strong>, aligning their digital presence with <strong className="font-semibold text-brand-text group-hover:text-brand-accent transition-colors">high-trust medical standards</strong> and improving the end-to-end user journey.</span></li>
@@ -44,9 +33,20 @@ export default function ResumePage() {
                 </ul>
               </div>
 
+              {/* Job 2 */}
+              <div>
+                <h3 className="text-[20px] font-semibold text-brand-text mb-1">Codiris | Co-Founder &amp; Product Designer (04/2025 – 02/2026)</h3>
+                <div className="text-[14px] font-medium text-brand-text/50 uppercase tracking-wider mb-4">AI-Native Product, Agent-Driven Design, and 0→1</div>
+                <ul className="flex flex-col gap-3 text-[16px] leading-[24px] text-brand-text/80">
+                  <li className="flex gap-3 items-start group"><span className="text-brand-accent mt-0.5">→</span><span><strong className="font-semibold text-brand-text group-hover:text-brand-accent transition-colors">Systems Design:</strong> Designed an <strong className="font-semibold text-brand-text group-hover:text-brand-accent transition-colors">AI-native environment</strong> for product teams, orchestrating specialized agents from brainstorm to shipped product. Every agent downstream carries the <strong className="font-semibold text-brand-text group-hover:text-brand-accent transition-colors">full context</strong> of every decision that came before it.</span></li>
+                  <li className="flex gap-3 items-start group"><span className="text-brand-accent mt-0.5">→</span><span><strong className="font-semibold text-brand-text group-hover:text-brand-accent transition-colors">Data-Driven Iteration:</strong> Conducted user interviews and usability testing on v1, discovering that no users followed a linear workflow, leading to a full <strong className="font-semibold text-brand-text group-hover:text-brand-accent transition-colors">information architecture overhaul</strong> and a <strong className="font-semibold text-brand-text group-hover:text-brand-accent transition-colors">tab-based v2</strong> that significantly improved user experience and repeat engagement.</span></li>
+                  <li className="flex gap-3 items-start group"><span className="text-brand-accent mt-0.5">→</span><span><strong className="font-semibold text-brand-text group-hover:text-brand-accent transition-colors">Agile Collaboration:</strong> Worked within an Agile/Scrum framework alongside a PM and two engineers across <strong className="font-semibold text-brand-text group-hover:text-brand-accent transition-colors">Washington DC, San Francisco, and Paris</strong>, coordinating across time zones and languages to ship a complex, AI-native product from 0 to 1.</span></li>
+                </ul>
+              </div>
+
               {/* Job 3 */}
               <div>
-                <h3 className="text-[20px] font-semibold text-brand-text mb-1">Operations &amp; Hospitality | General Manager &amp; Director (2017 - 2025)</h3>
+                <h3 className="text-[20px] font-semibold text-brand-text mb-1">Operations &amp; Hospitality | General Manager &amp; Director (08/2016 – 03/2024)</h3>
                 <div className="text-[14px] font-medium text-brand-text/50 uppercase tracking-wider mb-4">Service Design, End-to-End Experience, and Customer Loyalty</div>
                 <ul className="flex flex-col gap-3 text-[16px] leading-[24px] text-brand-text/80">
                   <li className="flex gap-3 items-start group"><span className="text-brand-accent mt-0.5">→</span><span><strong className="font-semibold text-brand-text group-hover:text-brand-accent transition-colors">End-to-End Experience Design:</strong> Designed and launched a Shopify e-commerce platform bridging physical production and digital fulfillment, generating <strong className="font-semibold text-brand-text group-hover:text-brand-accent transition-colors">$20,000+</strong> in revenue within six months and a <strong className="font-semibold text-brand-text group-hover:text-brand-accent transition-colors">20% customer return rate</strong>.</span></li>
@@ -56,7 +56,7 @@ export default function ResumePage() {
 
               {/* Job 4 */}
               <div>
-                <h3 className="text-[20px] font-semibold text-brand-text mb-1">Strategic Communications | Associate &amp; Account Executive (2010 - 2016)</h3>
+                <h3 className="text-[20px] font-semibold text-brand-text mb-1">Strategic Communications | Associate &amp; Account Executive (09/2010 – 02/2016)</h3>
                 <div className="text-[14px] font-medium text-brand-text/50 uppercase tracking-wider mb-4">Strategic Messaging, Stakeholder Management, and Storytelling</div>
                 <ul className="flex flex-col gap-3 text-[16px] leading-[24px] text-brand-text/80">
                   <li className="flex gap-3 items-start group"><span className="text-brand-accent mt-0.5">→</span><span><strong className="font-semibold text-brand-text group-hover:text-brand-accent transition-colors">Stakeholder Identification &amp; Alignment:</strong> Managed communications for Fortune 500 clients, developing strategies that translated complex business needs into <strong className="font-semibold text-brand-text group-hover:text-brand-accent transition-colors">clear, actionable narratives</strong>.</span></li>
@@ -109,23 +109,17 @@ export default function ResumePage() {
           {/* Skills */}
           <div>
              <h3 className="text-sm font-semibold text-brand-text/50 uppercase tracking-widest mb-4">Skills</h3>
-             <div className="flex flex-col gap-5">
+             <div className="flex flex-wrap gap-2">
                 {[
-                  { category: "Core UX/UI", items: ["Human-Centered Design", "Information Architecture", "Responsive Design", "Prototyping", "Accessibility & 508 Compliance"] },
-                  { category: "Research & Discovery", items: ["User Research", "Usability Testing", "Competitive Analysis", "Discovery Workshops", "Journey Mapping"] },
-                  { category: "Strategy & Systems", items: ["Product Strategy", "Service Design", "Systems Thinking", "Behavioral Design", "Agile / Scrum"] },
-                  { category: "Communication", items: ["Stakeholder Alignment", "Strategic Communications"] },
-                ].map(group => (
-                  <div key={group.category}>
-                    <h4 className="text-[13px] font-semibold text-brand-text/60 mb-2">{group.category}</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {group.items.map(skill => (
-                        <span key={skill} className="px-3 py-1.5 bg-border-light text-[14px] text-brand-text rounded-md border border-border-dark whitespace-nowrap">
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
+                  "Product Design & Strategy", "Human-Centered Design", "User Research & Testing",
+                  "Discovery Workshops", "User Journey Mapping", "Prototyping",
+                  "Systems Thinking", "Behavioral & Conversion Design", "Visual Design",
+                  "Agile / Scrum", "Information Architecture", "WCAG & 508 Compliance",
+                  "Stakeholder Alignment", "Strategic Communications"
+                ].map(skill => (
+                  <span key={skill} className="px-3 py-1.5 bg-border-light text-[14px] text-brand-text rounded-md border border-border-dark whitespace-nowrap">
+                    {skill}
+                  </span>
                 ))}
              </div>
           </div>
@@ -135,8 +129,9 @@ export default function ResumePage() {
              <h3 className="text-sm font-semibold text-brand-text/50 uppercase tracking-widest mb-4">Tools</h3>
              <div className="flex flex-wrap gap-2">
                 {[
-                  "Figma", "FigmaMake", "Cursor", "Claude Code", "Antigravity", "Gemini", "ChatGPT", "Claude", 
-                  "PostHog Analytics", "GitHub", "Notion", "Trello", "Adobe Creative Suite", "Miro", "FigJam"
+                  "Figma", "FigmaMake", "Cursor", "Claude Code", "Antigravity", "Gemini", "ChatGPT", "Claude",
+                  "PostHog Analytics", "GitHub", "Notion", "Trello", "Adobe Creative Suite", "Miro", "FigJam",
+                  "ScreenStudio", "Capcut Video"
                 ].map(tool => (
                   <span key={tool} className="px-3 py-1.5 bg-border-light text-[14px] text-brand-text rounded-md border border-border-dark whitespace-nowrap">
                     {tool}
