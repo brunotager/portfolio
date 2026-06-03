@@ -101,7 +101,7 @@ export default function ResumePage() {
                  <CopyEmail />
                </li>
                <li>
-                 <a href="/images/Bruno_Tager_Resume.pdf" download className="hover:text-brand-accent transition-colors">Download Resume</a>
+                 <a href="https://drive.google.com/file/d/1gZZIuYEZkpbAPAtOUuuQDT2t5nuex95f/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="hover:text-brand-accent transition-colors">Download Resume</a>
                </li>
              </ul>
           </div>

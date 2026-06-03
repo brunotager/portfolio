@@ -1,7 +1,56 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { VisualBlock } from "@/components/ui/VisualBlock";
+
+const CASE_STUDY_META: Record<string, { title: string; description: string }> = {
+  codiris: {
+    title: "Codiris: Systems Architecture | Bruno Tager",
+    description:
+      "How I scaled a 0-to-1 AI product by identifying a systemic industry problem and using data-driven research to iterate from v1 to v2.",
+  },
+  "fit-and-fun": {
+    title: "Fit & Fun: Behavioral Design | Bruno Tager",
+    description:
+      "How I drove fitness consistency by engineering a low-friction habit loop that rewards effort and builds visible, immediate momentum.",
+  },
+  cyclebot: {
+    title: "CycleBot: Driving ROI | Bruno Tager",
+    description:
+      "How I solved a 70% cart abandonment rate by replacing user hesitation with a decisive AI agent that builds buying confidence.",
+  },
+  ccta: {
+    title: "CCTA: High-Trust UX | Bruno Tager",
+    description:
+      "How I lowered the barrier to mental health care by transforming a cluttered interface into a calm, goal-oriented experience.",
+  },
+};
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const meta = CASE_STUDY_META[slug];
+
+  if (!meta) {
+    return {
+      title: "Case Study | Bruno Tager",
+    };
+  }
+
+  return {
+    title: meta.title,
+    description: meta.description,
+    openGraph: {
+      title: meta.title,
+      description: meta.description,
+      url: `https://portfolio-brunotager.vercel.app/portfolio/${slug}`,
+    },
+  };
+}
 
 const CASE_STUDIES: Record<string, any> = {
   "codiris": {

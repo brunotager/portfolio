@@ -1,0 +1,104 @@
+# Bruno Tager — Product Designer (Full Profile)
+
+> AI-native UX/UI designer with 16 years of experience across three careers: strategic communications, operations, and product. I design products that help people act, not hesitate.
+
+## Professional Summary
+
+Bruno Tager is an AI-native UX/UI designer based in Washington, DC, with 16 years of experience spread across three careers: strategic communications, operations, and product. Each career taught a different way to ask: where does the user get stuck, and how do I fix it? He has applied that mindset to Fortune 500 brands, a B2B SaaS product he co-founded, a Section 508-compliant government platform, and his own consulting practice.
+
+## Core Principles
+
+- **Strategic Performance:** Bridges the gap between business objectives and user needs, ensuring every feature is a deliberate choice leading to a measurable outcome.
+- **Retention through Visible Progress:** Designs products that make user effort legible, turning initial curiosity into long-term commitment that drives lifetime value.
+- **Calm Systems:** Builds high-trust environments where the interface never becomes a barrier to the user's goals.
+
+---
+
+## Experience
+
+### Tager Consulting | Principal Designer (03/2024 – present)
+*Strategic Design, Research-Based Decision Making, and Multi-Platform Products*
+
+- **HCD & Digital Redesign:** Applied Human-Centered Design to reorganize a mental health clinic's patient intake experience, aligning their digital presence with high-trust medical standards and improving the end-to-end user journey.
+- **Conversion Design:** Designed high-converting landing pages for an EdTech platform tailored to specific user acquisition partnerships, doubling annual revenue by removing friction between discovery and sign-up.
+- **Systems & Service Design:** Led a full POS systems migration and staff training for a DC restaurant, automating the order intake process and redirecting 100% of host team focus to the guest experience.
+
+### Codiris | Co-Founder & Product Designer (04/2025 – 02/2026)
+*AI-Native Product, Agent-Driven Design, and 0→1*
+
+- **Systems Design:** Designed an AI-native environment for product teams, orchestrating specialized agents from brainstorm to shipped product. Every agent downstream carries the full context of every decision that came before it.
+- **Data-Driven Iteration:** Conducted user interviews and usability testing on v1, discovering that no users followed a linear workflow, leading to a full information architecture overhaul and a tab-based v2 that significantly improved user experience and repeat engagement.
+- **Agile Collaboration:** Worked within an Agile/Scrum framework alongside a PM and two engineers across Washington DC, San Francisco, and Paris.
+
+### Operations & Hospitality | General Manager & Director (08/2016 – 03/2024)
+*Service Design, End-to-End Experience, and Customer Loyalty*
+
+- Designed and launched a Shopify e-commerce platform bridging physical production and digital fulfillment, generating $20,000+ in revenue within six months and a 20% customer return rate.
+- Directed post-pandemic business revitalizations across multiple venues, achieving a 30% year-over-year sales increase by redesigning service programs.
+
+### Strategic Communications | Associate & Account Executive (09/2010 – 02/2016)
+*Strategic Messaging, Stakeholder Management, and Storytelling*
+
+- Managed communications for Fortune 500 clients, developing strategies that translated complex business needs into clear, actionable narratives.
+- Designed strategic messaging frameworks for large-scale corporate initiatives, driving user acquisition of 23,000+ applicants.
+
+---
+
+## Education
+
+- **UX/UI Design Bootcamp** — Springboard, Online (03/24–04/25). Intensive HCD and AI-research training, including a 4-week internship at American Dream (NJ) designing high-scale, omni-channel retail and e-commerce experiences.
+- **International Studies, BA** — UC Irvine, California (2006–2010). Concentrations in Mediation and Conflict Resolution.
+
+---
+
+## Skills
+
+Product Design & Strategy, Human-Centered Design, User Research & Testing, Discovery Workshops, User Journey Mapping, Prototyping, Systems Thinking, Behavioral & Conversion Design, Visual Design, Agile/Scrum, Information Architecture, WCAG & 508 Compliance, Stakeholder Alignment, Strategic Communications
+
+## Tools
+
+Figma, FigmaMake, Cursor, Claude Code, Antigravity, Gemini, ChatGPT, Claude, PostHog Analytics, GitHub, Notion, Trello, Adobe Creative Suite, Miro, FigJam, ScreenStudio, Capcut Video
+
+## Languages
+
+English (Bi-lingual), French (Bi-lingual), Spanish (Conversational), Arabic (Conversational)
+
+---
+
+## Case Studies
+
+### Codiris: Systems Architecture
+*Restoring the Product Development Lifecycle*
+
+Scaled a 0-to-1 AI environment by identifying a systemic industry problem and using data-driven research to iterate the product from v1 to v2. Product teams lose momentum between development phases because context is scattered across disconnected tools. Codiris solved this by building an integrated Product Development Environment (PDE) that maintains full context through the iteration process. Key shift: replaced rigid step-by-step flows with a tab-based architecture that matches how builders actually think.
+
+**URL:** https://portfolio-brunotager.vercel.app/portfolio/codiris
+
+### Fit & Fun: Behavioral Design
+*Designing Momentum in the Daily Routine*
+
+Drove fitness consistency by engineering a low-friction habit loop that rewards effort and builds visible, immediate momentum. Most fitness products assume users have consistent time and stable motivation. Fit & Fun was built to reduce Time-to-Start and make progress instantly visible, focusing on behavioral design and gamification for adults in their 30s and beyond.
+
+**URL:** https://portfolio-brunotager.vercel.app/portfolio/fit-and-fun
+
+### CycleBot: Driving ROI
+*Optimizing the Path to High-Value Purchase*
+
+Solved a 70% cart abandonment rate by replacing user hesitation with a decisive AI agent that builds buying confidence. Transformed a traditional e-commerce website into a mobile-first AI assistant that replicates real-life expert guidance. Key insight: trust, not persuasion, drives high-ticket purchases. Replaced open conversational model with structured specs picking to reduce cognitive load.
+
+**URL:** https://portfolio-brunotager.vercel.app/portfolio/cyclebot
+
+### CCTA: High-Trust UX
+*Scaling Acquisition Through Clinical Trust*
+
+Lowered the barrier to mental health care by transforming a cluttered interface into a calm, goal-oriented experience. Redesigned a mental health clinic's website to increase qualified inbound leads while respecting the emotional context of people seeking therapy. Focused on clinical authority with warmth, accessibility (WCAG/508 compliance), and clear paths from first visit to booked inquiry.
+
+**URL:** https://portfolio-brunotager.vercel.app/portfolio/ccta
+
+---
+
+## Contact
+
+- **Email:** brunotager@gmail.com
+- **LinkedIn:** https://www.linkedin.com/in/brunotager
+- **Website:** https://portfolio-brunotager.vercel.app

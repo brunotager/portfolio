@@ -1,0 +1,30 @@
+# Bruno Tager — Product Designer
+
+> AI-native UX/UI designer with 16 years of experience. I design products that help people act, not hesitate.
+
+## About
+
+Bruno Tager is a product designer based in Washington, DC, with 16 years of experience spanning strategic communications, operations, and product design. He removes the friction between user intention and action.
+
+## Website
+
+- Homepage: https://portfolio-brunotager.vercel.app
+- About: https://portfolio-brunotager.vercel.app/about
+- Resume: https://portfolio-brunotager.vercel.app/resume
+- Contact: https://portfolio-brunotager.vercel.app/contact
+
+## Case Studies
+
+- Codiris — Systems Architecture: https://portfolio-brunotager.vercel.app/portfolio/codiris
+- Fit & Fun — Behavioral Design: https://portfolio-brunotager.vercel.app/portfolio/fit-and-fun
+- CycleBot — Driving ROI: https://portfolio-brunotager.vercel.app/portfolio/cyclebot
+- CCTA — High-Trust UX: https://portfolio-brunotager.vercel.app/portfolio/ccta
+
+## Contact
+
+- Email: brunotager@gmail.com
+- LinkedIn: https://www.linkedin.com/in/brunotager
+
+## Detailed Information
+
+For a comprehensive overview including full resume, case study details, and skills, see: https://portfolio-brunotager.vercel.app/llms-full.txt
